@@ -1,6 +1,6 @@
 # Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*
 
-This repository contains all code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*.
+This repository contains all the code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*.
 
 # File structure
 
@@ -22,7 +22,7 @@ This repository contains all code for the pre-print paper *Partially Exchangeabl
 
 /src/alpha stable
 
-* source files for the alpha stable distribtion
+* source files for the alpha-stable distribtion
 
 /src/AR2
 
@@ -30,11 +30,11 @@ This repository contains all code for the pre-print paper *Partially Exchangeabl
 
 /src/g-and-k distribtion
 
-* source files for the g-and-k distribtion
+* source files for the g-and-k distribution
 
 /src/generate training test data  
 
-* generic code to generate training a test data for some model
+* generic code to generate training and test data for some model
 
 /src/MA2
 
@@ -67,4 +67,4 @@ Packages used:
 
 # Data
 
-The data used can be generated from the code.
+The data used in the paper can be generated from the code.
