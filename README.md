@@ -2,6 +2,8 @@
 
 This repository contains all code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*.
 
+# File structure
+
 /lunarc
 
 * Run-scripts and output files for LUNARC ([http://www.lunarc.lu.se/](http://www.lunarc.lu.se/))
