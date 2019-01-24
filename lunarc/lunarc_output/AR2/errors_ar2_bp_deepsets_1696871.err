@@ -1,0 +1,6 @@
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193]
+│   exception = ArgumentError: Invalid header in cache file /home/samwiq/.julia/compiled/v1.0/CodecZlib/1TI30.ji.
+└ @ Base loading.jl:963
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for Knet [1902f260-5fb4-5aff-8c31-6271790ab950]
+│   exception = Required dependency CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] failed to load from a cache file.
+└ @ Base loading.jl:963

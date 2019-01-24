@@ -1,0 +1,22 @@
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for JLD2 [033835bb-8acc-5ee8-8aae-3f567f8a3819]
+│   exception = Required dependency CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] failed to load from a cache file.
+└ @ Base loading.jl:963
+ERROR: LoadError: DimensionMismatch("matrix A has dimensions (100,1002), vector B has length 1000")
+Stacktrace:
+ [1] generic_matvecmul!(::Array{Float64,1}, ::Char, ::Array{Float32,2}, ::Array{Float64,1}) at /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/LinearAlgebra/src/matmul.jl:499
+ [2] mul! at /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/LinearAlgebra/src/matmul.jl:75 [inlined]
+ [3] *(::Array{Float32,2}, ::Array{Float64,1}) at /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/LinearAlgebra/src/matmul.jl:46
+ [4] predict(::Array{Any,1}, ::Array{Float64,1}) at /home/samwiq/ABC and deep learning project/abc-dl/src/nets/mlp_predict.jl:7
+ [5] calc_summary(::Array{Float64,1}, ::Array{Float64,1}) at /home/samwiq/ABC and deep learning project/abc-dl/src/alpha stable dist/train_simple_dnn_network.jl:342
+ [6] #abcrs#11(::Float64, ::Bool, ::Function, ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,2}, ::typeof(calc_summary), ::typeof(ρ)) at /home/samwiq/ABC and deep learning project/abc-dl/src/abc algorithms/abc_rs.jl:23
+ [7] (::getfield(Main, Symbol("#kw##abcrs")))(::NamedTuple{(:return_data, :cutoff_percentile),Tuple{Bool,Float64}}, ::typeof(abcrs), ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,2}, ::Function, ::Function) at ./none:0
+ [8] macro expansion at ./util.jl:156 [inlined]
+ [9] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/alpha stable dist/mutiple_ABC_runs_simple_dnn.jl:23 [inlined]
+ [10] top-level scope at ./none:0
+ [11] include at ./boot.jl:317 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1038
+ [13] include(::Module, ::String) at ./sysimg.jl:29
+ [14] exec_options(::Base.JLOptions) at ./client.jl:229
+ [15] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/alpha stable dist/mutiple_ABC_runs_simple_dnn.jl:17
+slurmstepd: error: Exceeded step memory limit at some point.

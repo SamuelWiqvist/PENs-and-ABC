@@ -1,0 +1,13 @@
+┌ Warning: Module DataFrames with build ID 5803561666671738 is missing from the cache.
+│ This may mean DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+ERROR: LoadError: UndefVarError: nbr_features not defined
+Stacktrace:
+ [1] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/mutiple_ABC_runs_bp_deepsets.jl:33 [inlined]
+ [2] top-level scope at ./none:0
+ [3] include at ./boot.jl:317 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1038
+ [5] include(::Module, ::String) at ./sysimg.jl:29
+ [6] exec_options(::Base.JLOptions) at ./client.jl:229
+ [7] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/mutiple_ABC_runs_bp_deepsets.jl:16

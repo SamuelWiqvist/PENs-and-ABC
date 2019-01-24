@@ -1,0 +1,11 @@
+ERROR: LoadError: UndefVarError: p_out not defined
+Stacktrace:
+ [1] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:164
+ [2] top-level scope at util.jl:213
+ [3] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:207
+ [4] include at ./boot.jl:317 [inlined]
+ [5] include_relative(::Module, ::String) at ./loading.jl:1038
+ [6] include(::Module, ::String) at ./sysimg.jl:29
+ [7] exec_options(::Base.JLOptions) at ./client.jl:229
+ [8] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:206

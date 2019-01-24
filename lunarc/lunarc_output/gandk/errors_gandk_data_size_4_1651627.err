@@ -1,0 +1,9 @@
+ERROR: LoadError: UndefVarError: model not defined
+Stacktrace:
+ [1] top-level scope at none:0
+ [2] include at ./boot.jl:317 [inlined]
+ [3] include_relative(::Module, ::String) at ./loading.jl:1038
+ [4] include(::Module, ::String) at ./sysimg.jl:29
+ [5] exec_options(::Base.JLOptions) at ./client.jl:229
+ [6] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:316

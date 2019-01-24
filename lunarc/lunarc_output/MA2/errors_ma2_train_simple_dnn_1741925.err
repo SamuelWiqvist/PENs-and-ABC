@@ -1,0 +1,8 @@
+ERROR: LoadError: syntax: incomplete: "if" at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_simple_dnn_network.jl:298 requires end
+Stacktrace:
+ [1] include at ./boot.jl:317 [inlined]
+ [2] include_relative(::Module, ::String) at ./loading.jl:1038
+ [3] include(::Module, ::String) at ./sysimg.jl:29
+ [4] exec_options(::Base.JLOptions) at ./client.jl:229
+ [5] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_simple_dnn_network.jl:298

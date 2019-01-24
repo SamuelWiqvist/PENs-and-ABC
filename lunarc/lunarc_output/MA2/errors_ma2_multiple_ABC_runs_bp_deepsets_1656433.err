@@ -1,0 +1,2 @@
+/var/spool/slurm/job1656433/slurm_script: line 48: 148895 Killed                  julia /home/samwiq/'ABC and deep learning project'/abc-dl/src/MA2/mutiple_ABC_runs_bp_deepsets.jl standard 5 1 0
+slurmstepd: error: Exceeded step memory limit at some point.

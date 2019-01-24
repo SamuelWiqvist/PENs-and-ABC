@@ -1,0 +1,14 @@
+ERROR: LoadError: MethodError: no method matching getindex(::ErrorException, ::Int64)
+Stacktrace:
+ [1] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:615
+ [2] _require_from_serialized(::String) at ./loading.jl:678
+ [3] _require(::Base.PkgId) at ./logging.jl:317
+ [4] require(::Base.PkgId) at ./loading.jl:852
+ [5] macro expansion at ./logging.jl:311 [inlined]
+ [6] require(::Module, ::Symbol) at ./loading.jl:834
+ [7] include at ./boot.jl:317 [inlined]
+ [8] include_relative(::Module, ::String) at ./loading.jl:1038
+ [9] include(::Module, ::String) at ./sysimg.jl:29
+ [10] exec_options(::Base.JLOptions) at ./client.jl:229
+ [11] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_bp_deepsets.jl:32

@@ -1,0 +1,2 @@
+slurmstepd: error: *** JOB 1651599 ON ag06 CANCELLED AT 2018-10-25T16:37:03 DUE TO TIME LIMIT ***
+slurmstepd: error: Exceeded step memory limit at some point.

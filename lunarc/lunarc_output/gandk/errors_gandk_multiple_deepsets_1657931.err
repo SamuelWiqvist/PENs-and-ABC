@@ -1,0 +1,13 @@
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for JLD2 [033835bb-8acc-5ee8-8aae-3f567f8a3819]
+│   exception = Required dependency CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] failed to load from a cache file.
+└ @ Base loading.jl:963
+┌ Warning: Module CodecZlib with build ID 5813507257671606 is missing from the cache.
+│ This may mean CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+┌ Warning: Module CodecZlib with build ID 5813507257671606 is missing from the cache.
+│ This may mean CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+┌ Warning: Module DataFrames with build ID 5813542634782381 is missing from the cache.
+│ This may mean DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+slurmstepd: error: *** JOB 1657931 ON ag05 CANCELLED AT 2018-10-30T20:07:07 ***

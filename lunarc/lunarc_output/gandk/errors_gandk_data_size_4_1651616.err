@@ -1,0 +1,72 @@
+ERROR: LoadError: Cannot draw more samples without replacement.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] #sample!#122(::Bool, ::Bool, ::Function, ::MersenneTwister, ::UnitRange{Int64}, ::Array{Int64,1}) at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:333
+ [3] #sample! at ./none:0 [inlined]
+ [4] #sample#124 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:373 [inlined]
+ [5] #sample at ./none:0 [inlined]
+ [6] #sample#125 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:375 [inlined]
+ [7] (::getfield(StatsBase, Symbol("#kw##sample")))(::NamedTuple{(:replace,),Tuple{Bool}}, ::typeof(sample), ::UnitRange{Int64}, ::Int64) at ./none:0
+ [8] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:188
+ [9] top-level scope at util.jl:213
+ [10] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:229
+ [11] include at ./boot.jl:317 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1038
+ [13] include(::Module, ::String) at ./sysimg.jl:29
+ [14] exec_options(::Base.JLOptions) at ./client.jl:229
+ [15] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:228
+ERROR: LoadError: Cannot draw more samples without replacement.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] #sample!#122(::Bool, ::Bool, ::Function, ::MersenneTwister, ::UnitRange{Int64}, ::Array{Int64,1}) at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:333
+ [3] #sample! at ./none:0 [inlined]
+ [4] #sample#124 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:373 [inlined]
+ [5] #sample at ./none:0 [inlined]
+ [6] #sample#125 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:375 [inlined]
+ [7] (::getfield(StatsBase, Symbol("#kw##sample")))(::NamedTuple{(:replace,),Tuple{Bool}}, ::typeof(sample), ::UnitRange{Int64}, ::Int64) at ./none:0
+ [8] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:188
+ [9] top-level scope at util.jl:213
+ [10] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:229
+ [11] include at ./boot.jl:317 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1038
+ [13] include(::Module, ::String) at ./sysimg.jl:29
+ [14] exec_options(::Base.JLOptions) at ./client.jl:229
+ [15] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network.jl:228
+ERROR: LoadError: Cannot draw more samples without replacement.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] #sample!#122(::Bool, ::Bool, ::Function, ::MersenneTwister, ::UnitRange{Int64}, ::Array{Int64,1}) at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:333
+ [3] #sample! at ./none:0 [inlined]
+ [4] #sample#124 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:373 [inlined]
+ [5] #sample at ./none:0 [inlined]
+ [6] #sample#125 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:375 [inlined]
+ [7] (::getfield(StatsBase, Symbol("#kw##sample")))(::NamedTuple{(:replace,),Tuple{Bool}}, ::typeof(sample), ::UnitRange{Int64}, ::Int64) at ./none:0
+ [8] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network_timeseries_data.jl:186
+ [9] top-level scope at util.jl:213
+ [10] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network_timeseries_data.jl:226
+ [11] include at ./boot.jl:317 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1038
+ [13] include(::Module, ::String) at ./sysimg.jl:29
+ [14] exec_options(::Base.JLOptions) at ./client.jl:229
+ [15] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_simple_dnn_network_timeseries_data.jl:225
+ERROR: LoadError: Cannot draw more samples without replacement.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] #sample!#122(::Bool, ::Bool, ::Function, ::MersenneTwister, ::UnitRange{Int64}, ::Array{Int64,1}) at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:333
+ [3] #sample! at ./none:0 [inlined]
+ [4] #sample#124 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:373 [inlined]
+ [5] #sample at ./none:0 [inlined]
+ [6] #sample#125 at /home/samwiq/.julia/packages/StatsBase/NzjNi/src/sampling.jl:375 [inlined]
+ [7] (::getfield(StatsBase, Symbol("#kw##sample")))(::NamedTuple{(:replace,),Tuple{Bool}}, ::typeof(sample), ::UnitRange{Int64}, ::Int64) at ./none:0
+ [8] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:250
+ [9] top-level scope at util.jl:213
+ [10] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:293
+ [11] include at ./boot.jl:317 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1038
+ [13] include(::Module, ::String) at ./sysimg.jl:29
+ [14] exec_options(::Base.JLOptions) at ./client.jl:229
+ [15] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:292

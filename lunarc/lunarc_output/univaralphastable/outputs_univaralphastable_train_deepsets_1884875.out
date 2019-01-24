@@ -1,0 +1,220 @@
+Tue Jan  8 21:20:14 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 00000000:04:00.0 Off |                    0 |
+| N/A   32C    P0    65W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 00000000:05:00.0 Off |                    0 |
+| N/A   42C    P0    75W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 00000000:84:00.0 Off |                    0 |
+| N/A   32C    P0    62W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   42C    P0    75W / 149W |      0MiB / 11441MiB |     61%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+100
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+1
+0
+0
+Loading alpha-stable model
+0
+Nbr training obs 500000, nbr parameters 23924, obs/parameters 20.90
+  1.422197 seconds (3.14 M allocations: 162.953 MiB, 3.69% gc time)
+KnetArray{Float32,2}
+  0.417499 seconds (1.06 M allocations: 55.608 MiB, 4.84% gc time)
+110.776045 seconds (8.08 M allocations: 2.194 GiB, 17.61% gc time)
+  1.592945 seconds (90.90 k allocations: 4.706 MiB, 14.67% gc time)
+1
+(1002, 500000)
+Starting training
+Epoch 1, current loss (training) 0.1923, current loss (val) 0.2164, best loss (val) 0.2164 
+Epoch 2, current loss (training) 0.3079, current loss (val) 0.2878, best loss (val) 0.2164 
+Epoch 3, current loss (training) 0.5632, current loss (val) 0.2301, best loss (val) 0.2164 
+Epoch 4, current loss (training) 0.3467, current loss (val) 0.1963, best loss (val) 0.1963 
+Epoch 5, current loss (training) 0.4069, current loss (val) 0.1873, best loss (val) 0.1873 
+Epoch 6, current loss (training) 0.1985, current loss (val) 0.1924, best loss (val) 0.1873 
+Epoch 7, current loss (training) 0.2173, current loss (val) 0.1995, best loss (val) 0.1873 
+Epoch 8, current loss (training) 0.2717, current loss (val) 0.2235, best loss (val) 0.1873 
+Epoch 9, current loss (training) 0.2209, current loss (val) 0.2034, best loss (val) 0.1873 
+Epoch 10, current loss (training) 0.2776, current loss (val) 0.2334, best loss (val) 0.1873 
+Epoch 11, current loss (training) 0.2128, current loss (val) 0.2211, best loss (val) 0.1873 
+Epoch 12, current loss (training) 0.3020, current loss (val) 0.1794, best loss (val) 0.1794 
+Epoch 13, current loss (training) 0.2072, current loss (val) 0.1707, best loss (val) 0.1707 
+Epoch 14, current loss (training) 0.6701, current loss (val) 0.1661, best loss (val) 0.1661 
+Epoch 15, current loss (training) 0.2401, current loss (val) 0.2412, best loss (val) 0.1661 
+Epoch 16, current loss (training) 0.1628, current loss (val) 0.1679, best loss (val) 0.1661 
+Epoch 17, current loss (training) 0.1999, current loss (val) 0.1815, best loss (val) 0.1661 
+Epoch 18, current loss (training) 0.3448, current loss (val) 0.1687, best loss (val) 0.1661 
+Epoch 19, current loss (training) 0.3911, current loss (val) 0.1651, best loss (val) 0.1651 
+Epoch 20, current loss (training) 0.2340, current loss (val) 0.1793, best loss (val) 0.1651 
+Epoch 21, current loss (training) 0.2229, current loss (val) 0.1624, best loss (val) 0.1624 
+Epoch 22, current loss (training) 0.1914, current loss (val) 0.1918, best loss (val) 0.1624 
+Epoch 23, current loss (training) 0.1632, current loss (val) 0.1579, best loss (val) 0.1579 
+Epoch 24, current loss (training) 0.3253, current loss (val) 0.1615, best loss (val) 0.1579 
+Epoch 25, current loss (training) 0.1608, current loss (val) 0.1518, best loss (val) 0.1518 
+Epoch 26, current loss (training) 0.2020, current loss (val) 0.1512, best loss (val) 0.1512 
+Epoch 27, current loss (training) 0.3849, current loss (val) 0.1657, best loss (val) 0.1512 
+Epoch 28, current loss (training) 0.7363, current loss (val) 0.1663, best loss (val) 0.1512 
+Epoch 29, current loss (training) 0.1890, current loss (val) 0.1596, best loss (val) 0.1512 
+Epoch 30, current loss (training) 0.2412, current loss (val) 0.1816, best loss (val) 0.1512 
+Epoch 31, current loss (training) 0.1699, current loss (val) 0.1575, best loss (val) 0.1512 
+Epoch 32, current loss (training) 0.2674, current loss (val) 0.1736, best loss (val) 0.1512 
+Epoch 33, current loss (training) 0.1960, current loss (val) 0.1736, best loss (val) 0.1512 
+Epoch 34, current loss (training) 0.2237, current loss (val) 0.1903, best loss (val) 0.1512 
+Epoch 35, current loss (training) 0.2633, current loss (val) 0.1803, best loss (val) 0.1512 
+Epoch 36, current loss (training) 0.2718, current loss (val) 0.1604, best loss (val) 0.1512 
+Epoch 37, current loss (training) 0.2346, current loss (val) 0.1877, best loss (val) 0.1512 
+Epoch 38, current loss (training) 0.6667, current loss (val) 0.1602, best loss (val) 0.1512 
+Epoch 39, current loss (training) 0.1434, current loss (val) 0.1510, best loss (val) 0.1510 
+Epoch 40, current loss (training) 0.2960, current loss (val) 0.1588, best loss (val) 0.1510 
+Epoch 41, current loss (training) 0.2913, current loss (val) 0.1754, best loss (val) 0.1510 
+Epoch 42, current loss (training) 0.2671, current loss (val) 0.1866, best loss (val) 0.1510 
+Epoch 43, current loss (training) 0.1858, current loss (val) 0.1780, best loss (val) 0.1510 
+Epoch 44, current loss (training) 0.2800, current loss (val) 0.1698, best loss (val) 0.1510 
+Epoch 45, current loss (training) 0.5594, current loss (val) 0.1588, best loss (val) 0.1510 
+Epoch 46, current loss (training) 0.3433, current loss (val) 0.1545, best loss (val) 0.1510 
+Epoch 47, current loss (training) 0.2579, current loss (val) 0.1843, best loss (val) 0.1510 
+Epoch 48, current loss (training) 0.2358, current loss (val) 0.1994, best loss (val) 0.1510 
+Epoch 49, current loss (training) 0.2030, current loss (val) 0.1548, best loss (val) 0.1510 
+Epoch 50, current loss (training) 0.1922, current loss (val) 0.1499, best loss (val) 0.1499 
+Epoch 51, current loss (training) 0.2118, current loss (val) 0.1520, best loss (val) 0.1499 
+Epoch 52, current loss (training) 0.1634, current loss (val) 0.1593, best loss (val) 0.1499 
+Epoch 53, current loss (training) 0.1662, current loss (val) 0.1550, best loss (val) 0.1499 
+Epoch 54, current loss (training) 0.2300, current loss (val) 0.1674, best loss (val) 0.1499 
+Epoch 55, current loss (training) 0.1776, current loss (val) 0.1478, best loss (val) 0.1478 
+Epoch 56, current loss (training) 0.1934, current loss (val) 0.1506, best loss (val) 0.1478 
+Epoch 57, current loss (training) 0.2621, current loss (val) 0.2155, best loss (val) 0.1478 
+Epoch 58, current loss (training) 0.1507, current loss (val) 0.1498, best loss (val) 0.1478 
+Epoch 59, current loss (training) 0.1624, current loss (val) 0.1606, best loss (val) 0.1478 
+Epoch 60, current loss (training) 0.1856, current loss (val) 0.1596, best loss (val) 0.1478 
+Epoch 61, current loss (training) 0.1790, current loss (val) 0.1521, best loss (val) 0.1478 
+Epoch 62, current loss (training) 0.2490, current loss (val) 0.2404, best loss (val) 0.1478 
+Epoch 63, current loss (training) 0.1787, current loss (val) 0.1928, best loss (val) 0.1478 
+Epoch 64, current loss (training) 0.4126, current loss (val) 0.1618, best loss (val) 0.1478 
+Epoch 65, current loss (training) 0.1671, current loss (val) 0.1550, best loss (val) 0.1478 
+Epoch 66, current loss (training) 0.1560, current loss (val) 0.1530, best loss (val) 0.1478 
+Epoch 67, current loss (training) 0.1776, current loss (val) 0.1561, best loss (val) 0.1478 
+Epoch 68, current loss (training) 0.1703, current loss (val) 0.1585, best loss (val) 0.1478 
+Epoch 69, current loss (training) 0.1804, current loss (val) 0.1507, best loss (val) 0.1478 
+Epoch 70, current loss (training) 0.2160, current loss (val) 0.2155, best loss (val) 0.1478 
+Epoch 71, current loss (training) 0.1693, current loss (val) 0.1548, best loss (val) 0.1478 
+Epoch 72, current loss (training) 0.1806, current loss (val) 0.1477, best loss (val) 0.1477 
+Epoch 73, current loss (training) 0.2206, current loss (val) 0.1474, best loss (val) 0.1474 
+Epoch 74, current loss (training) 0.1611, current loss (val) 0.1454, best loss (val) 0.1454 
+Epoch 75, current loss (training) 0.2111, current loss (val) 0.1920, best loss (val) 0.1454 
+Epoch 76, current loss (training) 0.1732, current loss (val) 0.1466, best loss (val) 0.1454 
+Epoch 77, current loss (training) 0.1588, current loss (val) 0.1506, best loss (val) 0.1454 
+Epoch 78, current loss (training) 0.1574, current loss (val) 0.1533, best loss (val) 0.1454 
+Epoch 79, current loss (training) 0.1735, current loss (val) 0.1696, best loss (val) 0.1454 
+Epoch 80, current loss (training) 0.1519, current loss (val) 0.1772, best loss (val) 0.1454 
+Epoch 81, current loss (training) 0.2403, current loss (val) 0.2067, best loss (val) 0.1454 
+Epoch 82, current loss (training) 0.1773, current loss (val) 0.1599, best loss (val) 0.1454 
+Epoch 83, current loss (training) 0.1786, current loss (val) 0.1659, best loss (val) 0.1454 
+Epoch 84, current loss (training) 0.2110, current loss (val) 0.1668, best loss (val) 0.1454 
+Epoch 85, current loss (training) 0.1674, current loss (val) 0.1842, best loss (val) 0.1454 
+Epoch 86, current loss (training) 0.2006, current loss (val) 0.1542, best loss (val) 0.1454 
+Epoch 87, current loss (training) 0.1594, current loss (val) 0.1555, best loss (val) 0.1454 
+Epoch 88, current loss (training) 0.2434, current loss (val) 0.1459, best loss (val) 0.1454 
+Epoch 89, current loss (training) 0.1786, current loss (val) 0.1610, best loss (val) 0.1454 
+Epoch 90, current loss (training) 0.1612, current loss (val) 0.1607, best loss (val) 0.1454 
+Epoch 91, current loss (training) 0.7803, current loss (val) 0.1677, best loss (val) 0.1454 
+Epoch 92, current loss (training) 0.1610, current loss (val) 0.1456, best loss (val) 0.1454 
+Epoch 93, current loss (training) 0.1834, current loss (val) 0.1546, best loss (val) 0.1454 
+Epoch 94, current loss (training) 0.2340, current loss (val) 0.1655, best loss (val) 0.1454 
+Epoch 95, current loss (training) 0.1808, current loss (val) 0.1684, best loss (val) 0.1454 
+Epoch 96, current loss (training) 0.2031, current loss (val) 0.1529, best loss (val) 0.1454 
+Epoch 97, current loss (training) 0.1555, current loss (val) 0.1553, best loss (val) 0.1454 
+Epoch 98, current loss (training) 0.1527, current loss (val) 0.1655, best loss (val) 0.1454 
+Epoch 99, current loss (training) 0.1564, current loss (val) 0.1542, best loss (val) 0.1454 
+Epoch 100, current loss (training) 0.1784, current loss (val) 0.1984, best loss (val) 0.1454 
+567.643529 seconds (21.02 M allocations: 257.721 GiB, 1.67% gc time)
+run_time_first_training_cycle:  22077.75 
+
+Epochs 100, batch size, 200
+Nbr training obs 500000, nbr parameters 23924, obs/parameters 20.90
+
+(500000, 1000)
+Starting abc-rs
+Percentage done:  2.00 %
+Percentage done:  4.00 %
+Percentage done:  6.00 %
+Percentage done:  8.00 %
+Percentage done:  10.00 %
+Percentage done:  12.00 %
+Percentage done:  14.00 %
+Percentage done:  16.00 %
+Percentage done:  18.00 %
+Percentage done:  20.00 %
+Percentage done:  22.00 %
+Percentage done:  24.00 %
+Percentage done:  26.00 %
+Percentage done:  28.00 %
+Percentage done:  30.00 %
+Percentage done:  32.00 %
+Percentage done:  34.00 %
+Percentage done:  36.00 %
+Percentage done:  38.00 %
+Percentage done:  40.00 %
+Percentage done:  42.00 %
+Percentage done:  44.00 %
+Percentage done:  46.00 %
+Percentage done:  48.00 %
+Percentage done:  50.00 %
+Percentage done:  52.00 %
+Percentage done:  54.00 %
+Percentage done:  56.00 %
+Percentage done:  58.00 %
+Percentage done:  60.00 %
+Percentage done:  62.00 %
+Percentage done:  64.00 %
+Percentage done:  66.00 %
+Percentage done:  68.00 %
+Percentage done:  70.00 %
+Percentage done:  72.00 %
+Percentage done:  74.00 %
+Percentage done:  76.00 %
+Percentage done:  78.00 %
+Percentage done:  80.00 %
+Percentage done:  82.00 %
+Percentage done:  84.00 %
+Percentage done:  86.00 %
+Percentage done:  88.00 %
+Percentage done:  90.00 %
+Percentage done:  92.00 %
+Percentage done:  94.00 %
+Percentage done:  96.00 %
+Percentage done:  98.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+3440.630662 seconds (66.86 M allocations: 1.257 TiB, 2.79% gc time)
+(100, 4)
+end script

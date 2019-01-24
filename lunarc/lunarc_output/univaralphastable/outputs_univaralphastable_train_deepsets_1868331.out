@@ -1,0 +1,98 @@
+Thu Jan  3 17:27:59 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 00000000:04:00.0 Off |                    0 |
+| N/A   33C    P0    65W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 00000000:05:00.0 Off |                    0 |
+| N/A   45C    P0    75W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 00000000:84:00.0 Off |                    0 |
+| N/A   32C    P0    65W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   40C    P0    75W / 149W |      0MiB / 11441MiB |     67%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+5
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+1
+0
+0
+Loading alpha-stable model
+0
+Nbr training obs 1000, nbr parameters 23924, obs/parameters 0.04
+start test predict
+KnetArray{Float32,2}
+(1002, 1000)
+  0.030590 seconds (69.63 k allocations: 3.563 MiB, 18.81% gc time)
+KnetArray{Float32,2}
+(1002, 1000)
+start predict
+test2
+KnetArray{Float32,2}
+test1
+  1.415044 seconds (3.10 M allocations: 161.279 MiB, 3.72% gc time)
+KnetArray{Float32,2}
+start predict
+test2
+KnetArray{Float32,2}
+test1
+  0.419152 seconds (1.06 M allocations: 55.635 MiB, 4.91% gc time)
+start predict
+test2
+KnetArray{Float32,2}
+test1
+start predict
+test2
+KnetArray{Float32,2}
+test1
+start predict
+test2
+KnetArray{Float32,2}
+test1
+start predict
+test2
+KnetArray{Float32,2}
+test1
+start predict
+test2
+KnetArray{Float32,2}
+test1
+start predict
+test2
+KnetArray{Float32,2}
+test1
+  0.861549 seconds (1.76 M allocations: 94.657 MiB, 3.47% gc time)
+start predict
+test2
+KnetArray{Float32,2}
+test1
+  1.149683 seconds (87.04 k allocations: 4.651 MiB, 21.00% gc time)
+end script

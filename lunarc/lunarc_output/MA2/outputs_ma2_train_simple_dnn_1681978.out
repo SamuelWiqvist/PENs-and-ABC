@@ -1,0 +1,255 @@
+Wed Nov  7 18:01:00 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 396.44                 Driver Version: 396.44                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           On   | 00000000:04:00.0 Off |                    0 |
+| N/A   25C    P8    27W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           On   | 00000000:05:00.0 Off |                    0 |
+| N/A   31C    P8    31W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           On   | 00000000:84:00.0 Off |                    0 |
+| N/A   25C    P8    26W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           On   | 00000000:85:00.0 Off |                    0 |
+| N/A   31C    P8    30W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+DNN_simple
+standard
+10
+1
+1
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+4
+-1
+0
+Loading AR2 model
+Starting: generate_parameter_data_pairs
+Percentage done:  0.77 %
+Percentage done:  1.54 %
+Percentage done:  2.31 %
+Percentage done:  3.08 %
+Percentage done:  3.85 %
+Percentage done:  4.62 %
+Percentage done:  5.38 %
+Percentage done:  6.15 %
+Percentage done:  6.92 %
+Percentage done:  7.69 %
+Percentage done:  8.46 %
+Percentage done:  9.23 %
+Percentage done:  10.00 %
+Percentage done:  10.77 %
+Percentage done:  11.54 %
+Percentage done:  12.31 %
+Percentage done:  13.08 %
+Percentage done:  13.85 %
+Percentage done:  14.62 %
+Percentage done:  15.38 %
+Percentage done:  16.15 %
+Percentage done:  16.92 %
+Percentage done:  17.69 %
+Percentage done:  18.46 %
+Percentage done:  19.23 %
+Percentage done:  20.00 %
+Percentage done:  20.77 %
+Percentage done:  21.54 %
+Percentage done:  22.31 %
+Percentage done:  23.08 %
+Percentage done:  23.85 %
+Percentage done:  24.62 %
+Percentage done:  25.38 %
+Percentage done:  26.15 %
+Percentage done:  26.92 %
+Percentage done:  27.69 %
+Percentage done:  28.46 %
+Percentage done:  29.23 %
+Percentage done:  30.00 %
+Percentage done:  30.77 %
+Percentage done:  31.54 %
+Percentage done:  32.31 %
+Percentage done:  33.08 %
+Percentage done:  33.85 %
+Percentage done:  34.62 %
+Percentage done:  35.38 %
+Percentage done:  36.15 %
+Percentage done:  36.92 %
+Percentage done:  37.69 %
+Percentage done:  38.46 %
+Percentage done:  39.23 %
+Percentage done:  40.00 %
+Percentage done:  40.77 %
+Percentage done:  41.54 %
+Percentage done:  42.31 %
+Percentage done:  43.08 %
+Percentage done:  43.85 %
+Percentage done:  44.62 %
+Percentage done:  45.38 %
+Percentage done:  46.15 %
+Percentage done:  46.92 %
+Percentage done:  47.69 %
+Percentage done:  48.46 %
+Percentage done:  49.23 %
+Percentage done:  50.00 %
+Percentage done:  50.77 %
+Percentage done:  51.54 %
+Percentage done:  52.31 %
+Percentage done:  53.08 %
+Percentage done:  53.85 %
+Percentage done:  54.62 %
+Percentage done:  55.38 %
+Percentage done:  56.15 %
+Percentage done:  56.92 %
+Percentage done:  57.69 %
+Percentage done:  58.46 %
+Percentage done:  59.23 %
+Percentage done:  60.00 %
+Percentage done:  60.77 %
+Percentage done:  61.54 %
+Percentage done:  62.31 %
+Percentage done:  63.08 %
+Percentage done:  63.85 %
+Percentage done:  64.62 %
+Percentage done:  65.38 %
+Percentage done:  66.15 %
+Percentage done:  66.92 %
+Percentage done:  67.69 %
+Percentage done:  68.46 %
+Percentage done:  69.23 %
+Percentage done:  70.00 %
+Percentage done:  70.77 %
+Percentage done:  71.54 %
+Percentage done:  72.31 %
+Percentage done:  73.08 %
+Percentage done:  73.85 %
+Percentage done:  74.62 %
+Percentage done:  75.38 %
+Percentage done:  76.15 %
+Percentage done:  76.92 %
+Percentage done:  77.69 %
+Percentage done:  78.46 %
+Percentage done:  79.23 %
+Percentage done:  80.00 %
+Percentage done:  80.77 %
+Percentage done:  81.54 %
+Percentage done:  82.31 %
+Percentage done:  83.08 %
+Percentage done:  83.85 %
+Percentage done:  84.62 %
+Percentage done:  85.38 %
+Percentage done:  86.15 %
+Percentage done:  86.92 %
+Percentage done:  87.69 %
+Percentage done:  88.46 %
+Percentage done:  89.23 %
+Percentage done:  90.00 %
+Percentage done:  90.77 %
+Percentage done:  91.54 %
+Percentage done:  92.31 %
+Percentage done:  93.08 %
+Percentage done:  93.85 %
+Percentage done:  94.62 %
+Percentage done:  95.38 %
+Percentage done:  96.15 %
+Percentage done:  96.92 %
+Percentage done:  97.69 %
+Percentage done:  98.46 %
+Percentage done:  99.23 %
+Percentage done:  100.00 %
+Nbr training obs 1000, nbr parameters 25352, obs/parameters 0.04
+0
+Starting training
+Epoch 1, current loss (training) 10.7375, current loss (val) 13.9933
+Epoch 2, current loss (training) 11.9805, current loss (val) 13.2011
+Epoch 3, current loss (training) 6.4767, current loss (val) 8.3475
+Epoch 4, current loss (training) 4.0628, current loss (val) 6.2458
+Epoch 5, current loss (training) 3.0471, current loss (val) 5.3365
+Epoch 6, current loss (training) 2.5609, current loss (val) 4.7621
+Epoch 7, current loss (training) 2.4470, current loss (val) 4.2945
+Epoch 8, current loss (training) 1.9657, current loss (val) 3.8918
+Epoch 9, current loss (training) 1.7405, current loss (val) 3.6562
+Epoch 10, current loss (training) 1.5849, current loss (val) 3.5627
+run_time_first_training_cycle:  4.68 
+
+Epochs 10, batch size, 200
+Nbr training obs 1000, nbr parameters 25352, obs/parameters 0.04
+
+Starting abc-rs
+Percentage done:  2.00 %
+Percentage done:  4.00 %
+Percentage done:  6.00 %
+Percentage done:  8.00 %
+Percentage done:  10.00 %
+Percentage done:  12.00 %
+Percentage done:  14.00 %
+Percentage done:  16.00 %
+Percentage done:  18.00 %
+Percentage done:  20.00 %
+Percentage done:  22.00 %
+Percentage done:  24.00 %
+Percentage done:  26.00 %
+Percentage done:  28.00 %
+Percentage done:  30.00 %
+Percentage done:  32.00 %
+Percentage done:  34.00 %
+Percentage done:  36.00 %
+Percentage done:  38.00 %
+Percentage done:  40.00 %
+Percentage done:  42.00 %
+Percentage done:  44.00 %
+Percentage done:  46.00 %
+Percentage done:  48.00 %
+Percentage done:  50.00 %
+Percentage done:  52.00 %
+Percentage done:  54.00 %
+Percentage done:  56.00 %
+Percentage done:  58.00 %
+Percentage done:  60.00 %
+Percentage done:  62.00 %
+Percentage done:  64.00 %
+Percentage done:  66.00 %
+Percentage done:  68.00 %
+Percentage done:  70.00 %
+Percentage done:  72.00 %
+Percentage done:  74.00 %
+Percentage done:  76.00 %
+Percentage done:  78.00 %
+Percentage done:  80.00 %
+Percentage done:  82.00 %
+Percentage done:  84.00 %
+Percentage done:  86.00 %
+Percentage done:  88.00 %
+Percentage done:  90.00 %
+Percentage done:  92.00 %
+Percentage done:  94.00 %
+Percentage done:  96.00 %
+Percentage done:  98.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+ 71.545240 seconds (14.87 M allocations: 2.001 GiB, 1.03% gc time)
+end script

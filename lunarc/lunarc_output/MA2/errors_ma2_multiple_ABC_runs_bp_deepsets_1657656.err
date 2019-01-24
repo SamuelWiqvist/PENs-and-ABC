@@ -1,0 +1,19 @@
+ERROR: LoadError: LoadError: network training done
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] macro expansion at ./util.jl:154 [inlined]
+ [3] restruct(::Array{Float32,2}, ::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_bp_deepsets.jl:164
+ [4] top-level scope at util.jl:156
+ [5] include at ./boot.jl:317 [inlined]
+ [6] include_relative(::Module, ::String) at ./loading.jl:1038
+ [7] include(::Module, ::String) at ./sysimg.jl:29
+ [8] include(::String) at ./client.jl:388
+ [9] top-level scope at none:0
+ [10] include at ./boot.jl:317 [inlined]
+ [11] include_relative(::Module, ::String) at ./loading.jl:1038
+ [12] include(::Module, ::String) at ./sysimg.jl:29
+ [13] exec_options(::Base.JLOptions) at ./client.jl:229
+ [14] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_bp_deepsets.jl:175
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/mutiple_ABC_runs_bp_deepsets.jl:1
+slurmstepd: error: Exceeded step memory limit at some point.

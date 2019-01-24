@@ -1,0 +1,43 @@
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for AutoGrad [6710c13c-97f1-543f-91c5-74e8f7d95b35]
+│   exception = Required dependency SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] failed to load from a cache file.
+└ @ Base loading.jl:963
+┌ Warning: Module DataFrames with build ID 4145534923754919 is missing from the cache.
+│ This may mean DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+┌ Error: Error building `Knet`: 
+│ ERROR: LoadError: IOError: close: Unknown system error -116 (Unknown system error -116)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:85 [inlined]
+│  [2] close at ./filesystem.jl:99 [inlined]
+│  [3] sendfile(::String, ::String) at ./file.jl:755
+│  [4] #cp#12(::Bool, ::Bool, ::Function, ::String, ::String) at ./file.jl:336
+│  [5] (::getfield(Base.Filesystem, Symbol("#kw##cp")))(::NamedTuple{(:force,),Tuple{Bool}}, ::typeof(cp), ::String, ::String) at ./none:0
+│  [6] top-level scope at /home/samwiq/.julia/packages/Knet/hxjeS/deps/build.jl:49
+│  [7] include at ./boot.jl:317 [inlined]
+│  [8] include_relative(::Module, ::String) at ./loading.jl:1038
+│  [9] include(::Module, ::String) at ./sysimg.jl:29
+│  [10] include(::String) at ./client.jl:388
+│  [11] top-level scope at none:0
+│ in expression starting at /home/samwiq/.julia/packages/Knet/hxjeS/deps/build.jl:48
+└ @ Pkg.Operations /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/Pkg/src/Operations.jl:1068
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for Knet [1902f260-5fb4-5aff-8c31-6271790ab950]
+│   exception = Required dependency SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] failed to load from a cache file.
+└ @ Base loading.jl:963
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for AutoGrad [6710c13c-97f1-543f-91c5-74e8f7d95b35]
+│   exception = Required dependency SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] failed to load from a cache file.
+└ @ Base loading.jl:963
+ERROR: LoadError: LoadError: UndefVarError: generate_training_test_data not defined
+Stacktrace:
+ [1] top-level scope at util.jl:156
+ [2] include at ./boot.jl:317 [inlined]
+ [3] include_relative(::Module, ::String) at ./loading.jl:1038
+ [4] include(::Module, ::String) at ./sysimg.jl:29
+ [5] include(::String) at ./client.jl:388
+ [6] top-level scope at none:0
+ [7] include at ./boot.jl:317 [inlined]
+ [8] include_relative(::Module, ::String) at ./loading.jl:1038
+ [9] include(::Module, ::String) at ./sysimg.jl:29
+ [10] exec_options(::Base.JLOptions) at ./client.jl:229
+ [11] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_bp_deepsets.jl:58
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/mutiple_ABC_runs_bp_deepsets.jl:3

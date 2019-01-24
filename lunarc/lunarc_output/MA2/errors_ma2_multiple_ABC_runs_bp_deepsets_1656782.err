@@ -1,0 +1,16 @@
+ERROR: LoadError: LoadError: network training done
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at none:0
+ [3] include at ./boot.jl:317 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1038
+ [5] include(::Module, ::String) at ./sysimg.jl:29
+ [6] include(::String) at ./client.jl:388
+ [7] top-level scope at none:0
+ [8] include at ./boot.jl:317 [inlined]
+ [9] include_relative(::Module, ::String) at ./loading.jl:1038
+ [10] include(::Module, ::String) at ./sysimg.jl:29
+ [11] exec_options(::Base.JLOptions) at ./client.jl:229
+ [12] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/train_bp_deepsets.jl:116
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2/mutiple_ABC_runs_bp_deepsets.jl:4

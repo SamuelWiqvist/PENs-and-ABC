@@ -1,0 +1,4 @@
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193]
+│   exception = ArgumentError: Invalid header in cache file /home/samwiq/.julia/compiled/v1.0/CodecZlib/1TI30.ji.
+└ @ Base loading.jl:963
+slurmstepd: error: *** JOB 1681438 ON ag05 CANCELLED AT 2018-11-07T10:34:43 ***

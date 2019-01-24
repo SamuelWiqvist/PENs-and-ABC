@@ -1,0 +1,609 @@
+Wed Dec 19 15:00:15 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 00000000:04:00.0 Off |                    0 |
+| N/A   57C    P0    78W / 149W |  11438MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 00000000:05:00.0 Off |                    0 |
+| N/A   60C    P0    78W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 00000000:84:00.0 Off |                    0 |
+| N/A   34C    P0    66W / 149W |      0MiB / 11441MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   44C    P0    84W / 149W |      0MiB / 11441MiB |     97%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0     17477      C   julia                                      11425MiB |
++-----------------------------------------------------------------------------+
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+500
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+1
+0
+0
+Loading alpha-stable model
+Nbr training obs 500000, nbr parameters 115454, obs/parameters 4.33
+0
+Starting training
+Epoch 1, current loss (training) 2.2085, current loss (val) 2.2285, best loss (val) 2.2285 
+Epoch 2, current loss (training) 2.1326, current loss (val) 2.1030, best loss (val) 2.1030 
+Epoch 3, current loss (training) 2.0701, current loss (val) 2.0856, best loss (val) 2.0856 
+Epoch 4, current loss (training) 2.0984, current loss (val) 2.0761, best loss (val) 2.0761 
+Epoch 5, current loss (training) 2.0443, current loss (val) 2.0870, best loss (val) 2.0761 
+Epoch 6, current loss (training) 2.0276, current loss (val) 2.0874, best loss (val) 2.0761 
+Epoch 7, current loss (training) 2.0235, current loss (val) 2.0964, best loss (val) 2.0761 
+Epoch 8, current loss (training) 1.9832, current loss (val) 2.1146, best loss (val) 2.0761 
+Epoch 9, current loss (training) 1.9176, current loss (val) 2.0986, best loss (val) 2.0761 
+Epoch 10, current loss (training) 1.9505, current loss (val) 2.1329, best loss (val) 2.0761 
+Epoch 11, current loss (training) 1.9140, current loss (val) 2.1290, best loss (val) 2.0761 
+Epoch 12, current loss (training) 1.9117, current loss (val) 2.1538, best loss (val) 2.0761 
+Epoch 13, current loss (training) 1.8332, current loss (val) 2.1580, best loss (val) 2.0761 
+Epoch 14, current loss (training) 1.8400, current loss (val) 2.1672, best loss (val) 2.0761 
+Epoch 15, current loss (training) 1.8523, current loss (val) 2.1952, best loss (val) 2.0761 
+Epoch 16, current loss (training) 1.8054, current loss (val) 2.1784, best loss (val) 2.0761 
+Epoch 17, current loss (training) 1.7851, current loss (val) 2.2061, best loss (val) 2.0761 
+Epoch 18, current loss (training) 1.7933, current loss (val) 2.2095, best loss (val) 2.0761 
+Epoch 19, current loss (training) 1.8073, current loss (val) 2.2117, best loss (val) 2.0761 
+Epoch 20, current loss (training) 1.8173, current loss (val) 2.2236, best loss (val) 2.0761 
+Epoch 21, current loss (training) 1.7648, current loss (val) 2.2402, best loss (val) 2.0761 
+Epoch 22, current loss (training) 1.7516, current loss (val) 2.2323, best loss (val) 2.0761 
+Epoch 23, current loss (training) 1.7694, current loss (val) 2.2473, best loss (val) 2.0761 
+Epoch 24, current loss (training) 1.7486, current loss (val) 2.2660, best loss (val) 2.0761 
+Epoch 25, current loss (training) 1.7065, current loss (val) 2.2539, best loss (val) 2.0761 
+Epoch 26, current loss (training) 1.6994, current loss (val) 2.2703, best loss (val) 2.0761 
+Epoch 27, current loss (training) 1.7637, current loss (val) 2.3043, best loss (val) 2.0761 
+Epoch 28, current loss (training) 1.6906, current loss (val) 2.3062, best loss (val) 2.0761 
+Epoch 29, current loss (training) 1.7370, current loss (val) 2.2749, best loss (val) 2.0761 
+Epoch 30, current loss (training) 1.7433, current loss (val) 2.3011, best loss (val) 2.0761 
+Epoch 31, current loss (training) 1.7116, current loss (val) 2.3136, best loss (val) 2.0761 
+Epoch 32, current loss (training) 1.7169, current loss (val) 2.3018, best loss (val) 2.0761 
+Epoch 33, current loss (training) 1.7221, current loss (val) 2.3078, best loss (val) 2.0761 
+Epoch 34, current loss (training) 1.7011, current loss (val) 2.3500, best loss (val) 2.0761 
+Epoch 35, current loss (training) 1.7321, current loss (val) 2.2927, best loss (val) 2.0761 
+Epoch 36, current loss (training) 1.6573, current loss (val) 2.3207, best loss (val) 2.0761 
+Epoch 37, current loss (training) 1.7500, current loss (val) 2.3177, best loss (val) 2.0761 
+Epoch 38, current loss (training) 1.7010, current loss (val) 2.3395, best loss (val) 2.0761 
+Epoch 39, current loss (training) 1.6967, current loss (val) 2.3406, best loss (val) 2.0761 
+Epoch 40, current loss (training) 1.7180, current loss (val) 2.3530, best loss (val) 2.0761 
+Epoch 41, current loss (training) 1.6945, current loss (val) 2.3618, best loss (val) 2.0761 
+Epoch 42, current loss (training) 1.6993, current loss (val) 2.3421, best loss (val) 2.0761 
+Epoch 43, current loss (training) 1.6509, current loss (val) 2.4133, best loss (val) 2.0761 
+Epoch 44, current loss (training) 1.6911, current loss (val) 2.3708, best loss (val) 2.0761 
+Epoch 45, current loss (training) 1.6543, current loss (val) 2.3405, best loss (val) 2.0761 
+Epoch 46, current loss (training) 1.6943, current loss (val) 2.3641, best loss (val) 2.0761 
+Epoch 47, current loss (training) 1.6496, current loss (val) 2.3470, best loss (val) 2.0761 
+Epoch 48, current loss (training) 1.6466, current loss (val) 2.3763, best loss (val) 2.0761 
+Epoch 49, current loss (training) 1.6261, current loss (val) 2.3739, best loss (val) 2.0761 
+Epoch 50, current loss (training) 1.6637, current loss (val) 2.3765, best loss (val) 2.0761 
+Epoch 51, current loss (training) 1.6603, current loss (val) 2.4022, best loss (val) 2.0761 
+Epoch 52, current loss (training) 1.6490, current loss (val) 2.4069, best loss (val) 2.0761 
+Epoch 53, current loss (training) 1.7247, current loss (val) 2.3999, best loss (val) 2.0761 
+Epoch 54, current loss (training) 1.6586, current loss (val) 2.4130, best loss (val) 2.0761 
+Epoch 55, current loss (training) 1.6515, current loss (val) 2.3931, best loss (val) 2.0761 
+Epoch 56, current loss (training) 1.6364, current loss (val) 2.4304, best loss (val) 2.0761 
+Epoch 57, current loss (training) 1.6283, current loss (val) 2.4011, best loss (val) 2.0761 
+Epoch 58, current loss (training) 1.6234, current loss (val) 2.3999, best loss (val) 2.0761 
+Epoch 59, current loss (training) 1.6507, current loss (val) 2.4096, best loss (val) 2.0761 
+Epoch 60, current loss (training) 1.6257, current loss (val) 2.4836, best loss (val) 2.0761 
+Epoch 61, current loss (training) 1.6145, current loss (val) 2.3972, best loss (val) 2.0761 
+Epoch 62, current loss (training) 1.6952, current loss (val) 2.4561, best loss (val) 2.0761 
+Epoch 63, current loss (training) 1.6541, current loss (val) 2.4723, best loss (val) 2.0761 
+Epoch 64, current loss (training) 1.6510, current loss (val) 2.4157, best loss (val) 2.0761 
+Epoch 65, current loss (training) 1.6669, current loss (val) 2.4189, best loss (val) 2.0761 
+Epoch 66, current loss (training) 1.6252, current loss (val) 2.4793, best loss (val) 2.0761 
+Epoch 67, current loss (training) 1.6424, current loss (val) 2.4096, best loss (val) 2.0761 
+Epoch 68, current loss (training) 1.6352, current loss (val) 2.4320, best loss (val) 2.0761 
+Epoch 69, current loss (training) 1.6373, current loss (val) 2.4212, best loss (val) 2.0761 
+Epoch 70, current loss (training) 1.6252, current loss (val) 2.4349, best loss (val) 2.0761 
+Epoch 71, current loss (training) 1.5873, current loss (val) 2.4521, best loss (val) 2.0761 
+Epoch 72, current loss (training) 1.6144, current loss (val) 2.4321, best loss (val) 2.0761 
+Epoch 73, current loss (training) 1.6476, current loss (val) 2.4123, best loss (val) 2.0761 
+Epoch 74, current loss (training) 1.6351, current loss (val) 2.4530, best loss (val) 2.0761 
+Epoch 75, current loss (training) 1.6386, current loss (val) 2.4555, best loss (val) 2.0761 
+Epoch 76, current loss (training) 1.6066, current loss (val) 2.4473, best loss (val) 2.0761 
+Epoch 77, current loss (training) 1.5975, current loss (val) 2.4559, best loss (val) 2.0761 
+Epoch 78, current loss (training) 1.6259, current loss (val) 2.4622, best loss (val) 2.0761 
+Epoch 79, current loss (training) 1.6215, current loss (val) 2.4435, best loss (val) 2.0761 
+Epoch 80, current loss (training) 1.6122, current loss (val) 2.4536, best loss (val) 2.0761 
+Epoch 81, current loss (training) 1.6182, current loss (val) 2.4614, best loss (val) 2.0761 
+Epoch 82, current loss (training) 1.6318, current loss (val) 2.4852, best loss (val) 2.0761 
+Epoch 83, current loss (training) 1.5673, current loss (val) 2.4541, best loss (val) 2.0761 
+Epoch 84, current loss (training) 1.5872, current loss (val) 2.4667, best loss (val) 2.0761 
+Epoch 85, current loss (training) 1.6646, current loss (val) 2.4481, best loss (val) 2.0761 
+Epoch 86, current loss (training) 1.6403, current loss (val) 2.4431, best loss (val) 2.0761 
+Epoch 87, current loss (training) 1.6316, current loss (val) 2.4498, best loss (val) 2.0761 
+Epoch 88, current loss (training) 1.5956, current loss (val) 2.4865, best loss (val) 2.0761 
+Epoch 89, current loss (training) 1.6305, current loss (val) 2.4989, best loss (val) 2.0761 
+Epoch 90, current loss (training) 1.6196, current loss (val) 2.4773, best loss (val) 2.0761 
+Epoch 91, current loss (training) 1.5759, current loss (val) 2.4743, best loss (val) 2.0761 
+Epoch 92, current loss (training) 1.6011, current loss (val) 2.4795, best loss (val) 2.0761 
+Epoch 93, current loss (training) 1.5655, current loss (val) 2.4836, best loss (val) 2.0761 
+Epoch 94, current loss (training) 1.5847, current loss (val) 2.4809, best loss (val) 2.0761 
+Epoch 95, current loss (training) 1.6268, current loss (val) 2.4862, best loss (val) 2.0761 
+Epoch 96, current loss (training) 1.5815, current loss (val) 2.4773, best loss (val) 2.0761 
+Epoch 97, current loss (training) 1.6155, current loss (val) 2.4790, best loss (val) 2.0761 
+Epoch 98, current loss (training) 1.6126, current loss (val) 2.4765, best loss (val) 2.0761 
+Epoch 99, current loss (training) 1.6008, current loss (val) 2.4742, best loss (val) 2.0761 
+Epoch 100, current loss (training) 1.5770, current loss (val) 2.4644, best loss (val) 2.0761 
+Epoch 101, current loss (training) 1.6083, current loss (val) 2.4981, best loss (val) 2.0761 
+Epoch 102, current loss (training) 1.6251, current loss (val) 2.4612, best loss (val) 2.0761 
+Epoch 103, current loss (training) 1.5753, current loss (val) 2.4555, best loss (val) 2.0761 
+Epoch 104, current loss (training) 1.6081, current loss (val) 2.4806, best loss (val) 2.0761 
+Epoch 105, current loss (training) 1.6419, current loss (val) 2.4707, best loss (val) 2.0761 
+Epoch 106, current loss (training) 1.5912, current loss (val) 2.5049, best loss (val) 2.0761 
+Epoch 107, current loss (training) 1.5887, current loss (val) 2.4798, best loss (val) 2.0761 
+Epoch 108, current loss (training) 1.5979, current loss (val) 2.4933, best loss (val) 2.0761 
+Epoch 109, current loss (training) 1.6020, current loss (val) 2.4697, best loss (val) 2.0761 
+Epoch 110, current loss (training) 1.5832, current loss (val) 2.4589, best loss (val) 2.0761 
+Epoch 111, current loss (training) 1.6074, current loss (val) 2.4674, best loss (val) 2.0761 
+Epoch 112, current loss (training) 1.6399, current loss (val) 2.5107, best loss (val) 2.0761 
+Epoch 113, current loss (training) 1.5824, current loss (val) 2.4952, best loss (val) 2.0761 
+Epoch 114, current loss (training) 1.6132, current loss (val) 2.5337, best loss (val) 2.0761 
+Epoch 115, current loss (training) 1.5400, current loss (val) 2.4678, best loss (val) 2.0761 
+Epoch 116, current loss (training) 1.5878, current loss (val) 2.4932, best loss (val) 2.0761 
+Epoch 117, current loss (training) 1.5730, current loss (val) 2.5190, best loss (val) 2.0761 
+Epoch 118, current loss (training) 1.5775, current loss (val) 2.5248, best loss (val) 2.0761 
+Epoch 119, current loss (training) 1.5651, current loss (val) 2.5209, best loss (val) 2.0761 
+Epoch 120, current loss (training) 1.5776, current loss (val) 2.4622, best loss (val) 2.0761 
+Epoch 121, current loss (training) 1.5893, current loss (val) 2.5200, best loss (val) 2.0761 
+Epoch 122, current loss (training) 1.5918, current loss (val) 2.5066, best loss (val) 2.0761 
+Epoch 123, current loss (training) 1.5729, current loss (val) 2.4927, best loss (val) 2.0761 
+Epoch 124, current loss (training) 1.6062, current loss (val) 2.5395, best loss (val) 2.0761 
+Epoch 125, current loss (training) 1.5548, current loss (val) 2.5012, best loss (val) 2.0761 
+Epoch 126, current loss (training) 1.5834, current loss (val) 2.5191, best loss (val) 2.0761 
+Epoch 127, current loss (training) 1.5857, current loss (val) 2.5014, best loss (val) 2.0761 
+Epoch 128, current loss (training) 1.5670, current loss (val) 2.5112, best loss (val) 2.0761 
+Epoch 129, current loss (training) 1.6005, current loss (val) 2.4655, best loss (val) 2.0761 
+Epoch 130, current loss (training) 1.5626, current loss (val) 2.4874, best loss (val) 2.0761 
+Epoch 131, current loss (training) 1.5753, current loss (val) 2.5000, best loss (val) 2.0761 
+Epoch 132, current loss (training) 1.5821, current loss (val) 2.5112, best loss (val) 2.0761 
+Epoch 133, current loss (training) 1.5731, current loss (val) 2.5219, best loss (val) 2.0761 
+Epoch 134, current loss (training) 1.5709, current loss (val) 2.5231, best loss (val) 2.0761 
+Epoch 135, current loss (training) 1.5842, current loss (val) 2.5716, best loss (val) 2.0761 
+Epoch 136, current loss (training) 1.5664, current loss (val) 2.4849, best loss (val) 2.0761 
+Epoch 137, current loss (training) 1.5459, current loss (val) 2.4932, best loss (val) 2.0761 
+Epoch 138, current loss (training) 1.5668, current loss (val) 2.5397, best loss (val) 2.0761 
+Epoch 139, current loss (training) 1.6052, current loss (val) 2.5372, best loss (val) 2.0761 
+Epoch 140, current loss (training) 1.5987, current loss (val) 2.5328, best loss (val) 2.0761 
+Epoch 141, current loss (training) 1.5651, current loss (val) 2.5362, best loss (val) 2.0761 
+Epoch 142, current loss (training) 1.5834, current loss (val) 2.5274, best loss (val) 2.0761 
+Epoch 143, current loss (training) 1.5712, current loss (val) 2.5181, best loss (val) 2.0761 
+Epoch 144, current loss (training) 1.5411, current loss (val) 2.5512, best loss (val) 2.0761 
+Epoch 145, current loss (training) 1.5661, current loss (val) 2.5068, best loss (val) 2.0761 
+Epoch 146, current loss (training) 1.5664, current loss (val) 2.5290, best loss (val) 2.0761 
+Epoch 147, current loss (training) 1.5638, current loss (val) 2.5218, best loss (val) 2.0761 
+Epoch 148, current loss (training) 1.5745, current loss (val) 2.5466, best loss (val) 2.0761 
+Epoch 149, current loss (training) 1.5697, current loss (val) 2.5188, best loss (val) 2.0761 
+Epoch 150, current loss (training) 1.5859, current loss (val) 2.5652, best loss (val) 2.0761 
+Epoch 151, current loss (training) 1.5672, current loss (val) 2.5614, best loss (val) 2.0761 
+Epoch 152, current loss (training) 1.5464, current loss (val) 2.5256, best loss (val) 2.0761 
+Epoch 153, current loss (training) 1.5696, current loss (val) 2.5463, best loss (val) 2.0761 
+Epoch 154, current loss (training) 1.5305, current loss (val) 2.5666, best loss (val) 2.0761 
+Epoch 155, current loss (training) 1.5621, current loss (val) 2.5316, best loss (val) 2.0761 
+Epoch 156, current loss (training) 1.5950, current loss (val) 2.5826, best loss (val) 2.0761 
+Epoch 157, current loss (training) 1.5721, current loss (val) 2.5347, best loss (val) 2.0761 
+Epoch 158, current loss (training) 1.5602, current loss (val) 2.4922, best loss (val) 2.0761 
+Epoch 159, current loss (training) 1.5743, current loss (val) 2.5333, best loss (val) 2.0761 
+Epoch 160, current loss (training) 1.5575, current loss (val) 2.5189, best loss (val) 2.0761 
+Epoch 161, current loss (training) 1.5583, current loss (val) 2.5641, best loss (val) 2.0761 
+Epoch 162, current loss (training) 1.5508, current loss (val) 2.5356, best loss (val) 2.0761 
+Epoch 163, current loss (training) 1.5937, current loss (val) 2.5772, best loss (val) 2.0761 
+Epoch 164, current loss (training) 1.5313, current loss (val) 2.5411, best loss (val) 2.0761 
+Epoch 165, current loss (training) 1.5682, current loss (val) 2.4939, best loss (val) 2.0761 
+Epoch 166, current loss (training) 1.5066, current loss (val) 2.5348, best loss (val) 2.0761 
+Epoch 167, current loss (training) 1.5455, current loss (val) 2.5369, best loss (val) 2.0761 
+Epoch 168, current loss (training) 1.5552, current loss (val) 2.5387, best loss (val) 2.0761 
+Epoch 169, current loss (training) 1.5536, current loss (val) 2.5520, best loss (val) 2.0761 
+Epoch 170, current loss (training) 1.5561, current loss (val) 2.4990, best loss (val) 2.0761 
+Epoch 171, current loss (training) 1.5737, current loss (val) 2.5305, best loss (val) 2.0761 
+Epoch 172, current loss (training) 1.5752, current loss (val) 2.5606, best loss (val) 2.0761 
+Epoch 173, current loss (training) 1.5396, current loss (val) 2.5646, best loss (val) 2.0761 
+Epoch 174, current loss (training) 1.5600, current loss (val) 2.5691, best loss (val) 2.0761 
+Epoch 175, current loss (training) 1.6269, current loss (val) 2.5615, best loss (val) 2.0761 
+Epoch 176, current loss (training) 1.5580, current loss (val) 2.5386, best loss (val) 2.0761 
+Epoch 177, current loss (training) 1.5196, current loss (val) 2.5300, best loss (val) 2.0761 
+Epoch 178, current loss (training) 1.5822, current loss (val) 2.5886, best loss (val) 2.0761 
+Epoch 179, current loss (training) 1.5588, current loss (val) 2.5753, best loss (val) 2.0761 
+Epoch 180, current loss (training) 1.5556, current loss (val) 2.5544, best loss (val) 2.0761 
+Epoch 181, current loss (training) 1.5944, current loss (val) 2.5555, best loss (val) 2.0761 
+Epoch 182, current loss (training) 1.5077, current loss (val) 2.5458, best loss (val) 2.0761 
+Epoch 183, current loss (training) 1.5422, current loss (val) 2.5494, best loss (val) 2.0761 
+Epoch 184, current loss (training) 1.5494, current loss (val) 2.5110, best loss (val) 2.0761 
+Epoch 185, current loss (training) 1.5040, current loss (val) 2.5431, best loss (val) 2.0761 
+Epoch 186, current loss (training) 1.5587, current loss (val) 2.4846, best loss (val) 2.0761 
+Epoch 187, current loss (training) 1.5709, current loss (val) 2.5423, best loss (val) 2.0761 
+Epoch 188, current loss (training) 1.5898, current loss (val) 2.5388, best loss (val) 2.0761 
+Epoch 189, current loss (training) 1.5803, current loss (val) 2.5706, best loss (val) 2.0761 
+Epoch 190, current loss (training) 1.5570, current loss (val) 2.5911, best loss (val) 2.0761 
+Epoch 191, current loss (training) 1.5634, current loss (val) 2.5623, best loss (val) 2.0761 
+Epoch 192, current loss (training) 1.5923, current loss (val) 2.5687, best loss (val) 2.0761 
+Epoch 193, current loss (training) 1.5086, current loss (val) 2.5709, best loss (val) 2.0761 
+Epoch 194, current loss (training) 1.5287, current loss (val) 2.5394, best loss (val) 2.0761 
+Epoch 195, current loss (training) 1.5265, current loss (val) 2.5830, best loss (val) 2.0761 
+Epoch 196, current loss (training) 1.5052, current loss (val) 2.6074, best loss (val) 2.0761 
+Epoch 197, current loss (training) 1.5422, current loss (val) 2.5351, best loss (val) 2.0761 
+Epoch 198, current loss (training) 1.5466, current loss (val) 2.5580, best loss (val) 2.0761 
+Epoch 199, current loss (training) 1.5638, current loss (val) 2.5729, best loss (val) 2.0761 
+Epoch 200, current loss (training) 1.5771, current loss (val) 2.5588, best loss (val) 2.0761 
+Epoch 201, current loss (training) 1.5485, current loss (val) 2.5818, best loss (val) 2.0761 
+Epoch 202, current loss (training) 1.5267, current loss (val) 2.5709, best loss (val) 2.0761 
+Epoch 203, current loss (training) 1.5131, current loss (val) 2.5683, best loss (val) 2.0761 
+Epoch 204, current loss (training) 1.5452, current loss (val) 2.5508, best loss (val) 2.0761 
+Epoch 205, current loss (training) 1.5052, current loss (val) 2.5464, best loss (val) 2.0761 
+Epoch 206, current loss (training) 1.5482, current loss (val) 2.5648, best loss (val) 2.0761 
+Epoch 207, current loss (training) 1.5807, current loss (val) 2.5495, best loss (val) 2.0761 
+Epoch 208, current loss (training) 1.5157, current loss (val) 2.6056, best loss (val) 2.0761 
+Epoch 209, current loss (training) 1.5263, current loss (val) 2.5672, best loss (val) 2.0761 
+Epoch 210, current loss (training) 1.5576, current loss (val) 2.5616, best loss (val) 2.0761 
+Epoch 211, current loss (training) 1.5276, current loss (val) 2.5541, best loss (val) 2.0761 
+Epoch 212, current loss (training) 1.5755, current loss (val) 2.5554, best loss (val) 2.0761 
+Epoch 213, current loss (training) 1.5301, current loss (val) 2.5549, best loss (val) 2.0761 
+Epoch 214, current loss (training) 1.5688, current loss (val) 2.5798, best loss (val) 2.0761 
+Epoch 215, current loss (training) 1.5406, current loss (val) 2.5730, best loss (val) 2.0761 
+Epoch 216, current loss (training) 1.5358, current loss (val) 2.5681, best loss (val) 2.0761 
+Epoch 217, current loss (training) 1.5016, current loss (val) 2.5904, best loss (val) 2.0761 
+Epoch 218, current loss (training) 1.4939, current loss (val) 2.5598, best loss (val) 2.0761 
+Epoch 219, current loss (training) 1.5302, current loss (val) 2.5769, best loss (val) 2.0761 
+Epoch 220, current loss (training) 1.5773, current loss (val) 2.5632, best loss (val) 2.0761 
+Epoch 221, current loss (training) 1.5461, current loss (val) 2.5941, best loss (val) 2.0761 
+Epoch 222, current loss (training) 1.5663, current loss (val) 2.5481, best loss (val) 2.0761 
+Epoch 223, current loss (training) 1.5560, current loss (val) 2.5535, best loss (val) 2.0761 
+Epoch 224, current loss (training) 1.4780, current loss (val) 2.5687, best loss (val) 2.0761 
+Epoch 225, current loss (training) 1.5789, current loss (val) 2.5604, best loss (val) 2.0761 
+Epoch 226, current loss (training) 1.5972, current loss (val) 2.6339, best loss (val) 2.0761 
+Epoch 227, current loss (training) 1.5452, current loss (val) 2.5850, best loss (val) 2.0761 
+Epoch 228, current loss (training) 1.5532, current loss (val) 2.5564, best loss (val) 2.0761 
+Epoch 229, current loss (training) 1.5233, current loss (val) 2.5663, best loss (val) 2.0761 
+Epoch 230, current loss (training) 1.5497, current loss (val) 2.5880, best loss (val) 2.0761 
+Epoch 231, current loss (training) 1.5190, current loss (val) 2.5838, best loss (val) 2.0761 
+Epoch 232, current loss (training) 1.5345, current loss (val) 2.5981, best loss (val) 2.0761 
+Epoch 233, current loss (training) 1.5054, current loss (val) 2.5847, best loss (val) 2.0761 
+Epoch 234, current loss (training) 1.5580, current loss (val) 2.5948, best loss (val) 2.0761 
+Epoch 235, current loss (training) 1.5267, current loss (val) 2.5649, best loss (val) 2.0761 
+Epoch 236, current loss (training) 1.5217, current loss (val) 2.5607, best loss (val) 2.0761 
+Epoch 237, current loss (training) 1.5047, current loss (val) 2.5833, best loss (val) 2.0761 
+Epoch 238, current loss (training) 1.5654, current loss (val) 2.6077, best loss (val) 2.0761 
+Epoch 239, current loss (training) 1.5260, current loss (val) 2.5884, best loss (val) 2.0761 
+Epoch 240, current loss (training) 1.5772, current loss (val) 2.5696, best loss (val) 2.0761 
+Epoch 241, current loss (training) 1.5468, current loss (val) 2.6248, best loss (val) 2.0761 
+Epoch 242, current loss (training) 1.5702, current loss (val) 2.6261, best loss (val) 2.0761 
+Epoch 243, current loss (training) 1.5651, current loss (val) 2.6483, best loss (val) 2.0761 
+Epoch 244, current loss (training) 1.5469, current loss (val) 2.5331, best loss (val) 2.0761 
+Epoch 245, current loss (training) 1.5636, current loss (val) 2.5968, best loss (val) 2.0761 
+Epoch 246, current loss (training) 1.5347, current loss (val) 2.5688, best loss (val) 2.0761 
+Epoch 247, current loss (training) 1.5052, current loss (val) 2.5803, best loss (val) 2.0761 
+Epoch 248, current loss (training) 1.5427, current loss (val) 2.5959, best loss (val) 2.0761 
+Epoch 249, current loss (training) 1.5714, current loss (val) 2.5697, best loss (val) 2.0761 
+Epoch 250, current loss (training) 1.5601, current loss (val) 2.5996, best loss (val) 2.0761 
+Epoch 251, current loss (training) 1.5274, current loss (val) 2.5723, best loss (val) 2.0761 
+Epoch 252, current loss (training) 1.5096, current loss (val) 2.5665, best loss (val) 2.0761 
+Epoch 253, current loss (training) 1.5520, current loss (val) 2.6025, best loss (val) 2.0761 
+Epoch 254, current loss (training) 1.4997, current loss (val) 2.5239, best loss (val) 2.0761 
+Epoch 255, current loss (training) 1.5176, current loss (val) 2.6342, best loss (val) 2.0761 
+Epoch 256, current loss (training) 1.5115, current loss (val) 2.5673, best loss (val) 2.0761 
+Epoch 257, current loss (training) 1.5700, current loss (val) 2.5467, best loss (val) 2.0761 
+Epoch 258, current loss (training) 1.5636, current loss (val) 2.5802, best loss (val) 2.0761 
+Epoch 259, current loss (training) 1.5083, current loss (val) 2.5881, best loss (val) 2.0761 
+Epoch 260, current loss (training) 1.5305, current loss (val) 2.6027, best loss (val) 2.0761 
+Epoch 261, current loss (training) 1.5261, current loss (val) 2.5897, best loss (val) 2.0761 
+Epoch 262, current loss (training) 1.5474, current loss (val) 2.5573, best loss (val) 2.0761 
+Epoch 263, current loss (training) 1.5113, current loss (val) 2.5462, best loss (val) 2.0761 
+Epoch 264, current loss (training) 1.5708, current loss (val) 2.5897, best loss (val) 2.0761 
+Epoch 265, current loss (training) 1.5368, current loss (val) 2.5881, best loss (val) 2.0761 
+Epoch 266, current loss (training) 1.5360, current loss (val) 2.5750, best loss (val) 2.0761 
+Epoch 267, current loss (training) 1.5471, current loss (val) 2.5844, best loss (val) 2.0761 
+Epoch 268, current loss (training) 1.5270, current loss (val) 2.5854, best loss (val) 2.0761 
+Epoch 269, current loss (training) 1.5277, current loss (val) 2.5712, best loss (val) 2.0761 
+Epoch 270, current loss (training) 1.5159, current loss (val) 2.5810, best loss (val) 2.0761 
+Epoch 271, current loss (training) 1.5171, current loss (val) 2.5908, best loss (val) 2.0761 
+Epoch 272, current loss (training) 1.5430, current loss (val) 2.6044, best loss (val) 2.0761 
+Epoch 273, current loss (training) 1.5559, current loss (val) 2.6599, best loss (val) 2.0761 
+Epoch 274, current loss (training) 1.5220, current loss (val) 2.5904, best loss (val) 2.0761 
+Epoch 275, current loss (training) 1.5502, current loss (val) 2.5684, best loss (val) 2.0761 
+Epoch 276, current loss (training) 1.5314, current loss (val) 2.6107, best loss (val) 2.0761 
+Epoch 277, current loss (training) 1.5351, current loss (val) 2.6112, best loss (val) 2.0761 
+Epoch 278, current loss (training) 1.4747, current loss (val) 2.5658, best loss (val) 2.0761 
+Epoch 279, current loss (training) 1.5059, current loss (val) 2.5766, best loss (val) 2.0761 
+Epoch 280, current loss (training) 1.5696, current loss (val) 2.6020, best loss (val) 2.0761 
+Epoch 281, current loss (training) 1.5581, current loss (val) 2.6055, best loss (val) 2.0761 
+Epoch 282, current loss (training) 1.5100, current loss (val) 2.5897, best loss (val) 2.0761 
+Epoch 283, current loss (training) 1.4986, current loss (val) 2.5865, best loss (val) 2.0761 
+Epoch 284, current loss (training) 1.5172, current loss (val) 2.6149, best loss (val) 2.0761 
+Epoch 285, current loss (training) 1.5088, current loss (val) 2.6250, best loss (val) 2.0761 
+Epoch 286, current loss (training) 1.5232, current loss (val) 2.6070, best loss (val) 2.0761 
+Epoch 287, current loss (training) 1.5393, current loss (val) 2.5788, best loss (val) 2.0761 
+Epoch 288, current loss (training) 1.5575, current loss (val) 2.6239, best loss (val) 2.0761 
+Epoch 289, current loss (training) 1.5288, current loss (val) 2.5644, best loss (val) 2.0761 
+Epoch 290, current loss (training) 1.5112, current loss (val) 2.5895, best loss (val) 2.0761 
+Epoch 291, current loss (training) 1.5401, current loss (val) 2.5773, best loss (val) 2.0761 
+Epoch 292, current loss (training) 1.5029, current loss (val) 2.5352, best loss (val) 2.0761 
+Epoch 293, current loss (training) 1.5562, current loss (val) 2.5864, best loss (val) 2.0761 
+Epoch 294, current loss (training) 1.5527, current loss (val) 2.5991, best loss (val) 2.0761 
+Epoch 295, current loss (training) 1.4921, current loss (val) 2.5986, best loss (val) 2.0761 
+Epoch 296, current loss (training) 1.4857, current loss (val) 2.5814, best loss (val) 2.0761 
+Epoch 297, current loss (training) 1.5382, current loss (val) 2.6199, best loss (val) 2.0761 
+Epoch 298, current loss (training) 1.5581, current loss (val) 2.5941, best loss (val) 2.0761 
+Epoch 299, current loss (training) 1.5661, current loss (val) 2.6406, best loss (val) 2.0761 
+Epoch 300, current loss (training) 1.5081, current loss (val) 2.5476, best loss (val) 2.0761 
+Epoch 301, current loss (training) 1.4810, current loss (val) 2.6296, best loss (val) 2.0761 
+Epoch 302, current loss (training) 1.5386, current loss (val) 2.5730, best loss (val) 2.0761 
+Epoch 303, current loss (training) 1.4961, current loss (val) 2.5958, best loss (val) 2.0761 
+Epoch 304, current loss (training) 1.5480, current loss (val) 2.5790, best loss (val) 2.0761 
+Epoch 305, current loss (training) 1.5504, current loss (val) 2.5994, best loss (val) 2.0761 
+Epoch 306, current loss (training) 1.5637, current loss (val) 2.6110, best loss (val) 2.0761 
+Epoch 307, current loss (training) 1.5300, current loss (val) 2.6170, best loss (val) 2.0761 
+Epoch 308, current loss (training) 1.5484, current loss (val) 2.5869, best loss (val) 2.0761 
+Epoch 309, current loss (training) 1.5176, current loss (val) 2.6156, best loss (val) 2.0761 
+Epoch 310, current loss (training) 1.5318, current loss (val) 2.5974, best loss (val) 2.0761 
+Epoch 311, current loss (training) 1.5276, current loss (val) 2.6059, best loss (val) 2.0761 
+Epoch 312, current loss (training) 1.5602, current loss (val) 2.6258, best loss (val) 2.0761 
+Epoch 313, current loss (training) 1.4926, current loss (val) 2.5847, best loss (val) 2.0761 
+Epoch 314, current loss (training) 1.5075, current loss (val) 2.5727, best loss (val) 2.0761 
+Epoch 315, current loss (training) 1.5524, current loss (val) 2.5981, best loss (val) 2.0761 
+Epoch 316, current loss (training) 1.5306, current loss (val) 2.6062, best loss (val) 2.0761 
+Epoch 317, current loss (training) 1.4902, current loss (val) 2.5845, best loss (val) 2.0761 
+Epoch 318, current loss (training) 1.5333, current loss (val) 2.6203, best loss (val) 2.0761 
+Epoch 319, current loss (training) 1.5546, current loss (val) 2.5658, best loss (val) 2.0761 
+Epoch 320, current loss (training) 1.5447, current loss (val) 2.5709, best loss (val) 2.0761 
+Epoch 321, current loss (training) 1.5516, current loss (val) 2.5780, best loss (val) 2.0761 
+Epoch 322, current loss (training) 1.4958, current loss (val) 2.6205, best loss (val) 2.0761 
+Epoch 323, current loss (training) 1.5539, current loss (val) 2.5946, best loss (val) 2.0761 
+Epoch 324, current loss (training) 1.5507, current loss (val) 2.6321, best loss (val) 2.0761 
+Epoch 325, current loss (training) 1.5643, current loss (val) 2.6183, best loss (val) 2.0761 
+Epoch 326, current loss (training) 1.5374, current loss (val) 2.6115, best loss (val) 2.0761 
+Epoch 327, current loss (training) 1.5252, current loss (val) 2.6311, best loss (val) 2.0761 
+Epoch 328, current loss (training) 1.4877, current loss (val) 2.5994, best loss (val) 2.0761 
+Epoch 329, current loss (training) 1.5644, current loss (val) 2.5748, best loss (val) 2.0761 
+Epoch 330, current loss (training) 1.5048, current loss (val) 2.5946, best loss (val) 2.0761 
+Epoch 331, current loss (training) 1.5415, current loss (val) 2.5775, best loss (val) 2.0761 
+Epoch 332, current loss (training) 1.5321, current loss (val) 2.6186, best loss (val) 2.0761 
+Epoch 333, current loss (training) 1.5364, current loss (val) 2.6340, best loss (val) 2.0761 
+Epoch 334, current loss (training) 1.5306, current loss (val) 2.6090, best loss (val) 2.0761 
+Epoch 335, current loss (training) 1.5374, current loss (val) 2.5955, best loss (val) 2.0761 
+Epoch 336, current loss (training) 1.5256, current loss (val) 2.6294, best loss (val) 2.0761 
+Epoch 337, current loss (training) 1.4964, current loss (val) 2.6240, best loss (val) 2.0761 
+Epoch 338, current loss (training) 1.5465, current loss (val) 2.5910, best loss (val) 2.0761 
+Epoch 339, current loss (training) 1.4913, current loss (val) 2.6206, best loss (val) 2.0761 
+Epoch 340, current loss (training) 1.5397, current loss (val) 2.5942, best loss (val) 2.0761 
+Epoch 341, current loss (training) 1.5238, current loss (val) 2.6159, best loss (val) 2.0761 
+Epoch 342, current loss (training) 1.5204, current loss (val) 2.6079, best loss (val) 2.0761 
+Epoch 343, current loss (training) 1.5602, current loss (val) 2.5937, best loss (val) 2.0761 
+Epoch 344, current loss (training) 1.5305, current loss (val) 2.5902, best loss (val) 2.0761 
+Epoch 345, current loss (training) 1.4834, current loss (val) 2.5942, best loss (val) 2.0761 
+Epoch 346, current loss (training) 1.5586, current loss (val) 2.6259, best loss (val) 2.0761 
+Epoch 347, current loss (training) 1.5278, current loss (val) 2.5834, best loss (val) 2.0761 
+Epoch 348, current loss (training) 1.5196, current loss (val) 2.6379, best loss (val) 2.0761 
+Epoch 349, current loss (training) 1.5473, current loss (val) 2.6125, best loss (val) 2.0761 
+Epoch 350, current loss (training) 1.5169, current loss (val) 2.5739, best loss (val) 2.0761 
+Epoch 351, current loss (training) 1.5204, current loss (val) 2.6638, best loss (val) 2.0761 
+Epoch 352, current loss (training) 1.4959, current loss (val) 2.6037, best loss (val) 2.0761 
+Epoch 353, current loss (training) 1.5507, current loss (val) 2.6305, best loss (val) 2.0761 
+Epoch 354, current loss (training) 1.4807, current loss (val) 2.6325, best loss (val) 2.0761 
+Epoch 355, current loss (training) 1.5297, current loss (val) 2.6440, best loss (val) 2.0761 
+Epoch 356, current loss (training) 1.5268, current loss (val) 2.6040, best loss (val) 2.0761 
+Epoch 357, current loss (training) 1.5730, current loss (val) 2.5339, best loss (val) 2.0761 
+Epoch 358, current loss (training) 1.5251, current loss (val) 2.5996, best loss (val) 2.0761 
+Epoch 359, current loss (training) 1.5601, current loss (val) 2.6159, best loss (val) 2.0761 
+Epoch 360, current loss (training) 1.5338, current loss (val) 2.6335, best loss (val) 2.0761 
+Epoch 361, current loss (training) 1.5047, current loss (val) 2.5851, best loss (val) 2.0761 
+Epoch 362, current loss (training) 1.5730, current loss (val) 2.5769, best loss (val) 2.0761 
+Epoch 363, current loss (training) 1.5130, current loss (val) 2.6371, best loss (val) 2.0761 
+Epoch 364, current loss (training) 1.4943, current loss (val) 2.6100, best loss (val) 2.0761 
+Epoch 365, current loss (training) 1.5023, current loss (val) 2.6462, best loss (val) 2.0761 
+Epoch 366, current loss (training) 1.5657, current loss (val) 2.6116, best loss (val) 2.0761 
+Epoch 367, current loss (training) 1.5024, current loss (val) 2.6304, best loss (val) 2.0761 
+Epoch 368, current loss (training) 1.5157, current loss (val) 2.6184, best loss (val) 2.0761 
+Epoch 369, current loss (training) 1.4967, current loss (val) 2.5998, best loss (val) 2.0761 
+Epoch 370, current loss (training) 1.5333, current loss (val) 2.5948, best loss (val) 2.0761 
+Epoch 371, current loss (training) 1.5320, current loss (val) 2.6407, best loss (val) 2.0761 
+Epoch 372, current loss (training) 1.5309, current loss (val) 2.6116, best loss (val) 2.0761 
+Epoch 373, current loss (training) 1.4984, current loss (val) 2.6394, best loss (val) 2.0761 
+Epoch 374, current loss (training) 1.5552, current loss (val) 2.6049, best loss (val) 2.0761 
+Epoch 375, current loss (training) 1.5208, current loss (val) 2.6290, best loss (val) 2.0761 
+Epoch 376, current loss (training) 1.5094, current loss (val) 2.5598, best loss (val) 2.0761 
+Epoch 377, current loss (training) 1.5315, current loss (val) 2.6176, best loss (val) 2.0761 
+Epoch 378, current loss (training) 1.5301, current loss (val) 2.6336, best loss (val) 2.0761 
+Epoch 379, current loss (training) 1.5006, current loss (val) 2.5836, best loss (val) 2.0761 
+Epoch 380, current loss (training) 1.4788, current loss (val) 2.5857, best loss (val) 2.0761 
+Epoch 381, current loss (training) 1.4849, current loss (val) 2.6104, best loss (val) 2.0761 
+Epoch 382, current loss (training) 1.5231, current loss (val) 2.6181, best loss (val) 2.0761 
+Epoch 383, current loss (training) 1.5080, current loss (val) 2.6086, best loss (val) 2.0761 
+Epoch 384, current loss (training) 1.5443, current loss (val) 2.6260, best loss (val) 2.0761 
+Epoch 385, current loss (training) 1.4885, current loss (val) 2.5979, best loss (val) 2.0761 
+Epoch 386, current loss (training) 1.5336, current loss (val) 2.6152, best loss (val) 2.0761 
+Epoch 387, current loss (training) 1.5129, current loss (val) 2.6468, best loss (val) 2.0761 
+Epoch 388, current loss (training) 1.5044, current loss (val) 2.5571, best loss (val) 2.0761 
+Epoch 389, current loss (training) 1.4896, current loss (val) 2.5966, best loss (val) 2.0761 
+Epoch 390, current loss (training) 1.5129, current loss (val) 2.6701, best loss (val) 2.0761 
+Epoch 391, current loss (training) 1.5201, current loss (val) 2.6433, best loss (val) 2.0761 
+Epoch 392, current loss (training) 1.5249, current loss (val) 2.6387, best loss (val) 2.0761 
+Epoch 393, current loss (training) 1.5493, current loss (val) 2.6059, best loss (val) 2.0761 
+Epoch 394, current loss (training) 1.5294, current loss (val) 2.5885, best loss (val) 2.0761 
+Epoch 395, current loss (training) 1.5049, current loss (val) 2.6142, best loss (val) 2.0761 
+Epoch 396, current loss (training) 1.5218, current loss (val) 2.6091, best loss (val) 2.0761 
+Epoch 397, current loss (training) 1.5449, current loss (val) 2.6119, best loss (val) 2.0761 
+Epoch 398, current loss (training) 1.5337, current loss (val) 2.6019, best loss (val) 2.0761 
+Epoch 399, current loss (training) 1.5039, current loss (val) 2.6480, best loss (val) 2.0761 
+Epoch 400, current loss (training) 1.5176, current loss (val) 2.6264, best loss (val) 2.0761 
+Epoch 401, current loss (training) 1.5138, current loss (val) 2.5917, best loss (val) 2.0761 
+Epoch 402, current loss (training) 1.4936, current loss (val) 2.6492, best loss (val) 2.0761 
+Epoch 403, current loss (training) 1.5158, current loss (val) 2.6288, best loss (val) 2.0761 
+Epoch 404, current loss (training) 1.5077, current loss (val) 2.6298, best loss (val) 2.0761 
+Epoch 405, current loss (training) 1.5040, current loss (val) 2.6330, best loss (val) 2.0761 
+Epoch 406, current loss (training) 1.4665, current loss (val) 2.6233, best loss (val) 2.0761 
+Epoch 407, current loss (training) 1.5337, current loss (val) 2.6095, best loss (val) 2.0761 
+Epoch 408, current loss (training) 1.5278, current loss (val) 2.6047, best loss (val) 2.0761 
+Epoch 409, current loss (training) 1.5288, current loss (val) 2.6019, best loss (val) 2.0761 
+Epoch 410, current loss (training) 1.5382, current loss (val) 2.6468, best loss (val) 2.0761 
+Epoch 411, current loss (training) 1.5266, current loss (val) 2.6217, best loss (val) 2.0761 
+Epoch 412, current loss (training) 1.5229, current loss (val) 2.6191, best loss (val) 2.0761 
+Epoch 413, current loss (training) 1.5453, current loss (val) 2.6276, best loss (val) 2.0761 
+Epoch 414, current loss (training) 1.4877, current loss (val) 2.6210, best loss (val) 2.0761 
+Epoch 415, current loss (training) 1.5445, current loss (val) 2.6347, best loss (val) 2.0761 
+Epoch 416, current loss (training) 1.5343, current loss (val) 2.6267, best loss (val) 2.0761 
+Epoch 417, current loss (training) 1.5319, current loss (val) 2.5987, best loss (val) 2.0761 
+Epoch 418, current loss (training) 1.5297, current loss (val) 2.6380, best loss (val) 2.0761 
+Epoch 419, current loss (training) 1.5441, current loss (val) 2.6763, best loss (val) 2.0761 
+Epoch 420, current loss (training) 1.5234, current loss (val) 2.6005, best loss (val) 2.0761 
+Epoch 421, current loss (training) 1.5289, current loss (val) 2.6354, best loss (val) 2.0761 
+Epoch 422, current loss (training) 1.5171, current loss (val) 2.6094, best loss (val) 2.0761 
+Epoch 423, current loss (training) 1.5195, current loss (val) 2.6708, best loss (val) 2.0761 
+Epoch 424, current loss (training) 1.4884, current loss (val) 2.6390, best loss (val) 2.0761 
+Epoch 425, current loss (training) 1.5019, current loss (val) 2.6473, best loss (val) 2.0761 
+Epoch 426, current loss (training) 1.5211, current loss (val) 2.6513, best loss (val) 2.0761 
+Epoch 427, current loss (training) 1.5329, current loss (val) 2.6420, best loss (val) 2.0761 
+Epoch 428, current loss (training) 1.5142, current loss (val) 2.5847, best loss (val) 2.0761 
+Epoch 429, current loss (training) 1.5185, current loss (val) 2.6596, best loss (val) 2.0761 
+Epoch 430, current loss (training) 1.4886, current loss (val) 2.6380, best loss (val) 2.0761 
+Epoch 431, current loss (training) 1.5039, current loss (val) 2.6929, best loss (val) 2.0761 
+Epoch 432, current loss (training) 1.5023, current loss (val) 2.6474, best loss (val) 2.0761 
+Epoch 433, current loss (training) 1.5445, current loss (val) 2.6187, best loss (val) 2.0761 
+Epoch 434, current loss (training) 1.5148, current loss (val) 2.6084, best loss (val) 2.0761 
+Epoch 435, current loss (training) 1.5113, current loss (val) 2.6318, best loss (val) 2.0761 
+Epoch 436, current loss (training) 1.5281, current loss (val) 2.6620, best loss (val) 2.0761 
+Epoch 437, current loss (training) 1.5234, current loss (val) 2.6628, best loss (val) 2.0761 
+Epoch 438, current loss (training) 1.5388, current loss (val) 2.6485, best loss (val) 2.0761 
+Epoch 439, current loss (training) 1.5093, current loss (val) 2.6075, best loss (val) 2.0761 
+Epoch 440, current loss (training) 1.5720, current loss (val) 2.6095, best loss (val) 2.0761 
+Epoch 441, current loss (training) 1.5312, current loss (val) 2.6525, best loss (val) 2.0761 
+Epoch 442, current loss (training) 1.5236, current loss (val) 2.5820, best loss (val) 2.0761 
+Epoch 443, current loss (training) 1.5071, current loss (val) 2.6324, best loss (val) 2.0761 
+Epoch 444, current loss (training) 1.5078, current loss (val) 2.6555, best loss (val) 2.0761 
+Epoch 445, current loss (training) 1.5303, current loss (val) 2.6379, best loss (val) 2.0761 
+Epoch 446, current loss (training) 1.4955, current loss (val) 2.6309, best loss (val) 2.0761 
+Epoch 447, current loss (training) 1.5520, current loss (val) 2.5736, best loss (val) 2.0761 
+Epoch 448, current loss (training) 1.5270, current loss (val) 2.6349, best loss (val) 2.0761 
+Epoch 449, current loss (training) 1.5086, current loss (val) 2.6253, best loss (val) 2.0761 
+Epoch 450, current loss (training) 1.5060, current loss (val) 2.5992, best loss (val) 2.0761 
+Epoch 451, current loss (training) 1.5196, current loss (val) 2.6310, best loss (val) 2.0761 
+Epoch 452, current loss (training) 1.5156, current loss (val) 2.6627, best loss (val) 2.0761 
+Epoch 453, current loss (training) 1.5211, current loss (val) 2.5983, best loss (val) 2.0761 
+Epoch 454, current loss (training) 1.5033, current loss (val) 2.6544, best loss (val) 2.0761 
+Epoch 455, current loss (training) 1.5031, current loss (val) 2.6310, best loss (val) 2.0761 
+Epoch 456, current loss (training) 1.4827, current loss (val) 2.6311, best loss (val) 2.0761 
+Epoch 457, current loss (training) 1.4956, current loss (val) 2.6291, best loss (val) 2.0761 
+Epoch 458, current loss (training) 1.5142, current loss (val) 2.6302, best loss (val) 2.0761 
+Epoch 459, current loss (training) 1.4875, current loss (val) 2.6459, best loss (val) 2.0761 
+Epoch 460, current loss (training) 1.5043, current loss (val) 2.6258, best loss (val) 2.0761 
+Epoch 461, current loss (training) 1.5267, current loss (val) 2.6295, best loss (val) 2.0761 
+Epoch 462, current loss (training) 1.4746, current loss (val) 2.6550, best loss (val) 2.0761 
+Epoch 463, current loss (training) 1.5346, current loss (val) 2.6628, best loss (val) 2.0761 
+Epoch 464, current loss (training) 1.5024, current loss (val) 2.6400, best loss (val) 2.0761 
+Epoch 465, current loss (training) 1.5113, current loss (val) 2.5920, best loss (val) 2.0761 
+Epoch 466, current loss (training) 1.5265, current loss (val) 2.6189, best loss (val) 2.0761 
+Epoch 467, current loss (training) 1.5456, current loss (val) 2.6279, best loss (val) 2.0761 
+Epoch 468, current loss (training) 1.5110, current loss (val) 2.6117, best loss (val) 2.0761 
+Epoch 469, current loss (training) 1.5101, current loss (val) 2.6539, best loss (val) 2.0761 
+Epoch 470, current loss (training) 1.5270, current loss (val) 2.6499, best loss (val) 2.0761 
+Epoch 471, current loss (training) 1.5236, current loss (val) 2.6281, best loss (val) 2.0761 
+Epoch 472, current loss (training) 1.5405, current loss (val) 2.6986, best loss (val) 2.0761 
+Epoch 473, current loss (training) 1.4553, current loss (val) 2.6623, best loss (val) 2.0761 
+Epoch 474, current loss (training) 1.4989, current loss (val) 2.7068, best loss (val) 2.0761 
+Epoch 475, current loss (training) 1.5624, current loss (val) 2.6627, best loss (val) 2.0761 
+Epoch 476, current loss (training) 1.4586, current loss (val) 2.6406, best loss (val) 2.0761 
+Epoch 477, current loss (training) 1.5433, current loss (val) 2.6693, best loss (val) 2.0761 
+Epoch 478, current loss (training) 1.5128, current loss (val) 2.5956, best loss (val) 2.0761 
+Epoch 479, current loss (training) 1.5072, current loss (val) 2.6472, best loss (val) 2.0761 
+Epoch 480, current loss (training) 1.5108, current loss (val) 2.6343, best loss (val) 2.0761 
+Epoch 481, current loss (training) 1.4841, current loss (val) 2.6626, best loss (val) 2.0761 
+Epoch 482, current loss (training) 1.5205, current loss (val) 2.6168, best loss (val) 2.0761 
+Epoch 483, current loss (training) 1.4933, current loss (val) 2.6445, best loss (val) 2.0761 
+Epoch 484, current loss (training) 1.5040, current loss (val) 2.6659, best loss (val) 2.0761 
+Epoch 485, current loss (training) 1.5559, current loss (val) 2.6653, best loss (val) 2.0761 
+Epoch 486, current loss (training) 1.5126, current loss (val) 2.6273, best loss (val) 2.0761 
+Epoch 487, current loss (training) 1.4675, current loss (val) 2.6261, best loss (val) 2.0761 
+Epoch 488, current loss (training) 1.4889, current loss (val) 2.6646, best loss (val) 2.0761 
+Epoch 489, current loss (training) 1.4806, current loss (val) 2.6364, best loss (val) 2.0761 
+Epoch 490, current loss (training) 1.4992, current loss (val) 2.6905, best loss (val) 2.0761 
+Epoch 491, current loss (training) 1.4992, current loss (val) 2.6034, best loss (val) 2.0761 
+Epoch 492, current loss (training) 1.4838, current loss (val) 2.6589, best loss (val) 2.0761 
+Epoch 493, current loss (training) 1.5385, current loss (val) 2.6849, best loss (val) 2.0761 
+Epoch 494, current loss (training) 1.5052, current loss (val) 2.5928, best loss (val) 2.0761 
+Epoch 495, current loss (training) 1.5042, current loss (val) 2.6599, best loss (val) 2.0761 
+Epoch 496, current loss (training) 1.5317, current loss (val) 2.6455, best loss (val) 2.0761 
+Epoch 497, current loss (training) 1.5133, current loss (val) 2.6554, best loss (val) 2.0761 
+Epoch 498, current loss (training) 1.4802, current loss (val) 2.6518, best loss (val) 2.0761 
+Epoch 499, current loss (training) 1.5405, current loss (val) 2.6556, best loss (val) 2.0761 
+Epoch 500, current loss (training) 1.5191, current loss (val) 2.6381, best loss (val) 2.0761 
+run_time_first_training_cycle:  2482.63 
+
+Epochs 500, batch size, 200
+Nbr training obs 500000, nbr parameters 115454, obs/parameters 4.33
+
+Starting abc-rs
+Percentage done:  2.00 %
+Percentage done:  4.00 %
+Percentage done:  6.00 %
+Percentage done:  8.00 %
+Percentage done:  10.00 %
+Percentage done:  12.00 %
+Percentage done:  14.00 %
+Percentage done:  16.00 %
+Percentage done:  18.00 %
+Percentage done:  20.00 %
+Percentage done:  22.00 %
+Percentage done:  24.00 %
+Percentage done:  26.00 %
+Percentage done:  28.00 %
+Percentage done:  30.00 %
+Percentage done:  32.00 %
+Percentage done:  34.00 %
+Percentage done:  36.00 %
+Percentage done:  38.00 %
+Percentage done:  40.00 %
+Percentage done:  42.00 %
+Percentage done:  44.00 %
+Percentage done:  46.00 %
+Percentage done:  48.00 %
+Percentage done:  50.00 %
+Percentage done:  52.00 %
+Percentage done:  54.00 %
+Percentage done:  56.00 %
+Percentage done:  58.00 %
+Percentage done:  60.00 %
+Percentage done:  62.00 %
+Percentage done:  64.00 %
+Percentage done:  66.00 %
+Percentage done:  68.00 %
+Percentage done:  70.00 %
+Percentage done:  72.00 %
+Percentage done:  74.00 %
+Percentage done:  76.00 %
+Percentage done:  78.00 %
+Percentage done:  80.00 %
+Percentage done:  82.00 %
+Percentage done:  84.00 %
+Percentage done:  86.00 %
+Percentage done:  88.00 %
+Percentage done:  90.00 %
+Percentage done:  92.00 %
+Percentage done:  94.00 %
+Percentage done:  96.00 %
+Percentage done:  98.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+end script
