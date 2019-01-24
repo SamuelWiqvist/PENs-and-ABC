@@ -1,8 +1,53 @@
-# Deep learning architectures for learning summary statistics for ABC
+# Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*
 
-Combining ABC and deep learning methods. Using various deep learning architectures to learn summary statistics for ABC.
+This repository contains all code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*.
 
-## Software
+/lunarc
+
+* Run-scripts and output files for LUNARC ([http://www.lunarc.lu.se/](http://www.lunarc.lu.se/))
+
+/notebooks
+
+* Notebooks used for creating the plots in the paper (and several other plots)
+
+/src
+
+* source files
+
+/src/abc algorithms
+
+* code for generic ABC rejection sampling algorithm
+
+/src/alpha stable
+
+* source files for the alpha stable distribtion
+
+/src/AR2
+
+* source files for the AR2 model
+
+/src/g-and-k distribtion
+
+* source files for the g-and-k distribtion
+
+/src/generate training test data  
+
+* generic code to generate training a test data for some model
+
+/src/MA2
+
+* source files for the MA2 model
+
+/src/nets
+
+* generic code for the MLP network and generic loss functions
+
+/src/utilities
+
+* help functions (random number generators, distance functions ets.)
+
+
+# Software
 
 The code is written in Julia 1.0.0 and the framework Knet is used to train the networks. The code can be run on both CPUs and GPUs.
 
@@ -17,3 +62,7 @@ Packages used:
 * `DataFrames` v0.13.1
 * `StatsFuns` v0.7.0
 * `StatsBase` v0.25.0
+
+# Data
+
+The data used can be generated from the code.
