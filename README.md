@@ -1,6 +1,6 @@
-# Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* https://arxiv.org/abs/1901.10230
+# Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*
 
-This repository contains all the code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* by S. Wiqvist, P-A. Mattei, U. Picchini and J. Frellsen.
+This repository contains all the code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* by S. Wiqvist, P-A. Mattei, U. Picchini and J. Frellsen. https://arxiv.org/abs/1901.10230
 
 **N.B.:** The results in the pre-print at arXiv v1 are computed using the version of the code at tag *preprint_v1*.  
 
