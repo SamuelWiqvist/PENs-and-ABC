@@ -1,16 +1,19 @@
-# Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*
+# Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* https://arxiv.org/abs/1901.10230
 
 This repository contains all the code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* by S. Wiqvist, P-A. Mattei, U. Picchini and J. Frellsen.
 
-# File structure
+**N.B.:** The results in the pre-print at arXiv v1 are computed using the version of the code at tag *preprint_v1*.  
+
+
+## File structure
 
 /lunarc
 
-* Run-scripts and output files for LUNARC ([http://www.lunarc.lu.se/](http://www.lunarc.lu.se/))
+* run-scripts and output files for LUNARC ([http://www.lunarc.lu.se/](http://www.lunarc.lu.se/))
 
 /notebooks
 
-* Notebooks used for creating the plots in the paper (and several other plots)
+* notebooks used for creating the plots in the paper (and several other plots)
 
 /src
 
@@ -46,10 +49,10 @@ This repository contains all the code for the pre-print paper *Partially Exchang
 
 /src/utilities
 
-* help functions (random number generators, distance functions ets.)
+* help functions (random number generators, distance functions etc.)
 
 
-# Software
+## Software
 
 The code is written in Julia 1.0.0 and the framework Knet is used to train the networks. The code can be run on both CPUs and GPUs.
 
@@ -65,6 +68,6 @@ Packages used:
 * `StatsFuns` v0.7.0
 * `StatsBase` v0.25.0
 
-# Data
+## Data
 
 The data used in the paper can be generated from the code.
