@@ -38,7 +38,7 @@ This repository contains the code for the paper *Partially Exchangeable Networks
 
 * generic code to generate training and test data for some model
 
-/src/MA2
+/src/MA2 noisy data
 
 * source files for the MA2 model
 
