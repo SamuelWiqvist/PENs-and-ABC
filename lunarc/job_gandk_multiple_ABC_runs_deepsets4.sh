@@ -47,4 +47,4 @@ cd ..
 pwd
 
 # run program
-julia /home/samwiq/'ABC and deep learning project'/abc-dl/src/'g and k dist'/mutiple_ABC_runs_deepsets.jl standard 500 4 0
+julia /home/samwiq/'ABC and deep learning project'/abc-dl/src/'g and k dist'/multiple_ABC_runs_deepsets.jl standard 500 4 0

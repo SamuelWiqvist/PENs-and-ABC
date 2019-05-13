@@ -1,7 +1,7 @@
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Samuel Wiqvist, Pierre-Alexandre Mattei, Umberto Picchini, Jes Frellsen
+Copyright (c) 2018 Samuel Wiqvist, Pierre-Alexandre Mattei, Jes Frellsen, Umberto Picchini
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,0 +1,54 @@
+ERROR: LoadError: MethodError: no method matching getindex(::ErrorException, ::Int64)
+Stacktrace:
+ [1] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:615
+ [2] _require_from_serialized(::String) at ./loading.jl:678
+ [3] _require(::Base.PkgId) at ./logging.jl:317
+ [4] require(::Base.PkgId) at ./loading.jl:852
+ [5] macro expansion at ./logging.jl:311 [inlined]
+ [6] require(::Module, ::Symbol) at ./loading.jl:834
+ [7] include at ./boot.jl:317 [inlined]
+ [8] include_relative(::Module, ::String) at ./loading.jl:1038
+ [9] include(::Module, ::String) at ./sysimg.jl:29
+ [10] top-level scope at none:2
+ [11] eval at ./boot.jl:319 [inlined]
+ [12] eval(::Expr) at ./client.jl:389
+ [13] top-level scope at ./none:3
+in expression starting at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/AutoGrad.jl:47
+ERROR: LoadError: Failed to precompile AutoGrad [6710c13c-97f1-543f-91c5-74e8f7d95b35] to /home/samwiq/.julia/compiled/v1.0/AutoGrad/51RA4.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] macro expansion at ./logging.jl:313 [inlined]
+ [3] compilecache(::Base.PkgId, ::String) at ./loading.jl:1184
+ [4] _require(::Base.PkgId) at ./logging.jl:311
+ [5] require(::Base.PkgId) at ./loading.jl:852
+ [6] macro expansion at ./logging.jl:311 [inlined]
+ [7] require(::Module, ::Symbol) at ./loading.jl:834
+ [8] include at ./boot.jl:317 [inlined]
+ [9] include_relative(::Module, ::String) at ./loading.jl:1038
+ [10] include(::Module, ::String) at ./sysimg.jl:29
+ [11] top-level scope at none:2
+ [12] eval at ./boot.jl:319 [inlined]
+ [13] eval(::Expr) at ./client.jl:389
+ [14] top-level scope at ./none:3
+in expression starting at /home/samwiq/.julia/packages/Knet/hxjeS/src/Knet.jl:17
+ERROR: LoadError: LoadError: Failed to precompile Knet [1902f260-5fb4-5aff-8c31-6271790ab950] to /home/samwiq/.julia/compiled/v1.0/Knet/f4vSz.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] macro expansion at ./logging.jl:313 [inlined]
+ [3] compilecache(::Base.PkgId, ::String) at ./loading.jl:1184
+ [4] _require(::Base.PkgId) at ./logging.jl:311
+ [5] require(::Base.PkgId) at ./loading.jl:852
+ [6] macro expansion at ./logging.jl:311 [inlined]
+ [7] require(::Module, ::Symbol) at ./loading.jl:834
+ [8] include at ./boot.jl:317 [inlined]
+ [9] include_relative(::Module, ::String) at ./loading.jl:1038
+ [10] include(::Module, ::String) at ./sysimg.jl:29
+ [11] include(::String) at ./client.jl:388
+ [12] top-level scope at none:0
+ [13] include at ./boot.jl:317 [inlined]
+ [14] include_relative(::Module, ::String) at ./loading.jl:1038
+ [15] include(::Module, ::String) at ./sysimg.jl:29
+ [16] exec_options(::Base.JLOptions) at ./client.jl:229
+ [17] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/AR2/train_pen0.jl:41
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/AR2/multiple_ABC_runs_pen0.jl:3

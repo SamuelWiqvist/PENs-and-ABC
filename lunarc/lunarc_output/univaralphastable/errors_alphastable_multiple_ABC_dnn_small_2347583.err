@@ -1,0 +1,4 @@
+slurmstepd: error: Job 2347583 exceeded memory limit (11297168 > 11264000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 2347583 ON au222 CANCELLED AT 2019-05-09T17:19:21 ***
+slurmstepd: error: Exceeded step memory limit at some point.

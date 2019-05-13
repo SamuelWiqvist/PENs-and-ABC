@@ -1,3 +1,0 @@
-/var/spool/slurm/job1690816/slurm_script: line 48: 168016 Killed                  julia /home/samwiq/'ABC and deep learning project'/abc-dl/src/AR2/mutiple_ABC_runs_simple_dnn.jl DNN_simple standard 500 1 0
-slurmstepd: error: Exceeded step memory limit at some point.
-slurmstepd: error: Exceeded job memory limit at some point.

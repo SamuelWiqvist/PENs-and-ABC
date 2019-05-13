@@ -1,0 +1,22 @@
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for JLD2 [033835bb-8acc-5ee8-8aae-3f567f8a3819]
+│   exception = Required dependency CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] failed to load from a cache file.
+└ @ Base loading.jl:963
+┌ Error: Error building `Knet`: 
+│ ERROR: LoadError: IOError: unlink: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:85 [inlined]
+│  [2] unlink(::String) at ./file.jl:722
+│  [3] #rm#9(::Bool, ::Bool, ::Function, ::String) at ./file.jl:253
+│  [4] #rm at ./none:0 [inlined]
+│  [5] #checkfor_mv_cp_cptree#10(::Bool, ::Function, ::String, ::String, ::String) at ./file.jl:291
+│  [6] #checkfor_mv_cp_cptree at ./none:0 [inlined]
+│  [7] #cp#12(::Bool, ::Bool, ::Function, ::String, ::String) at ./file.jl:330
+│  [8] (::getfield(Base.Filesystem, Symbol("#kw##cp")))(::NamedTuple{(:force,),Tuple{Bool}}, ::typeof(cp), ::String, ::String) at ./none:0
+│  [9] top-level scope at /home/samwiq/.julia/packages/Knet/hxjeS/deps/build.jl:49
+│  [10] include at ./boot.jl:317 [inlined]
+│  [11] include_relative(::Module, ::String) at ./loading.jl:1038
+│  [12] include(::Module, ::String) at ./sysimg.jl:29
+│  [13] include(::String) at ./client.jl:388
+│  [14] top-level scope at none:0
+│ in expression starting at /home/samwiq/.julia/packages/Knet/hxjeS/deps/build.jl:48
+└ @ Pkg.Operations /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/Pkg/src/Operations.jl:1068

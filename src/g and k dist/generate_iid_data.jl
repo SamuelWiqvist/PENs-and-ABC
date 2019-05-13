@@ -25,7 +25,15 @@ x = LinRange(cdf_lower, cdf_upper, 100)
 Random.seed!(1234)
 y_obs = generate_data(θ_true)
 
+#=
+using PyPlot
+PyPlot.figure()
+h = PyPlot.plt[:hist](y_obs,50)
+PyPlot.ylabel("Freq.")
+
+pl.ylabel("EMD")
 y_obs = remove_outliers(y_obs, low_cutoff, high_cutoff)
+=#
 
 GC.gc()
 

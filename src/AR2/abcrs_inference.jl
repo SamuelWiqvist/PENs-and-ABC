@@ -19,7 +19,7 @@ calc_summary(y_obs,y_obs)
 ρ(s::Vector, s_star::Vector) = euclidean_dist(s, s_star, ones(5))
 
 # run ABC-RS
-approx_posterior_samples = @time abcrs(y_obs, proposalas, datasets, calc_summary, ρ; cutoff_percentile=0.02)
+approx_posterior_samples = @time abcrs(y_obs, proposalas, datasets, calc_summary, ρ; cutoff_percentile=0.1)
 
 write_to_files = 1
 

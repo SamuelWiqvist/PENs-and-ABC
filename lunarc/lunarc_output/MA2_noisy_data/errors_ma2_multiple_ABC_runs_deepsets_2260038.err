@@ -1,0 +1,22 @@
+ERROR: LoadError: LoadError: DimensionMismatch("")
+Stacktrace:
+ [1] #differentiate#3(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Function, ::Param{Array{KnetArray{Float32,2},1}}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:53
+ [2] differentiate(::Function, ::Param{Array{KnetArray{Float32,2},1}}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:42
+ [3] (::getfield(AutoGrad, Symbol("##gradfun#6#7")){typeof(loss),Int64,Bool})(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Array{KnetArray{Float32,2},1}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:124
+ [4] (::getfield(AutoGrad, Symbol("#gradfun#8")){getfield(AutoGrad, Symbol("##gradfun#6#7")){typeof(loss),Int64,Bool}})(::Array{KnetArray{Float32,2},1}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:120
+ [5] train_load_batch_to_gpu(::Array{KnetArray{Float32,2},1}, ::Data, ::Array{Adam,1}) at /home/samwiq/ABC and deep learning project/abc-dl/src/nets/generic_loss_grad_train.jl:30
+ [6] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2 noisy data/train_pen.jl:177
+ [7] top-level scope at util.jl:213
+ [8] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2 noisy data/train_pen.jl:231
+ [9] include at ./boot.jl:317 [inlined]
+ [10] include_relative(::Module, ::String) at ./loading.jl:1038
+ [11] include(::Module, ::String) at ./sysimg.jl:29
+ [12] include(::String) at ./client.jl:388
+ [13] top-level scope at none:0
+ [14] include at ./boot.jl:317 [inlined]
+ [15] include_relative(::Module, ::String) at ./loading.jl:1038
+ [16] include(::Module, ::String) at ./sysimg.jl:29
+ [17] exec_options(::Base.JLOptions) at ./client.jl:229
+ [18] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2 noisy data/train_pen.jl:230
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2 noisy data/multiple_ABC_runs_pen.jl:3

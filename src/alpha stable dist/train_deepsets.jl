@@ -1,10 +1,12 @@
 println("start script")
 
-network = "deepsets" # DNN_simple/fully_conncted
+network = "deepsets" # mlp/fully_conncted
 training_alg = ARGS[1] # standard/early_stopping
 epoch = parse(Int, ARGS[2])
 data_size = parse(Int, ARGS[3])
 write_to_file = parse(Int, ARGS[4])
+
+run_on_lunarc = true
 
 #=
 network = "deepsets"
@@ -47,7 +49,7 @@ include(pwd()*"/src/alpha stable dist/set_up.jl")
 include(pwd()*"/src/nets/generic_loss_grad_train.jl")
 
 # load proposalas
-if Knet.gpuCount() > 0
+if run_on_lunarc #Knet.gpuCount() > 0
 
     y_training = Matrix(CSV.read("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/y_training.csv"; allowmissing=:auto))
     y_val = Matrix(CSV.read("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/y_val.csv"; allowmissing=:auto))
@@ -281,8 +283,10 @@ if Knet.gpuCount() > 0
     y_temp = convert(Knet.KnetArray, y_training[:,1:1000])
 
 else
+
     x_temp = X_training[:,1:1000]
     y_temp = y_training[:,1:1000]
+
 end
 
 
@@ -355,9 +359,9 @@ function training(epoch, batch_size)
         elseif loss_val < best_val_loss
             best_val_loss = loss_val
             if Knet.gpuCount() > 0
-                w_best = deepcopy(map(Array, w))
+                map_to_w_best!(w,w_best,Knet.gpuCount() > 0)
             else
-                w_best = deepcopy(w)
+                map_to_w_best!(w,w_best,Knet.gpuCount() > 0)
             end
         end
 
@@ -391,6 +395,17 @@ end
 
 w = w_best
 
+if Knet.gpuCount() > 0
+
+	w = map(Array, w)
+	println(loss(map(KnetArray, w), X_val, y_val)/size(X_val,2))
+
+else
+
+	println(loss(w, X_val, y_val)/size(X_val,2))
+
+end
+
 ################################################################################
 # calc predictions
 ################################################################################
@@ -415,7 +430,7 @@ job = network*"_"*string(data_size)
 
 if write_to_file == 1
 
-    if Knet.gpuCount() > 0
+    if run_on_lunarc #Knet.gpuCount() > 0
 
         CSV.write("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/loss_vec_training_"*job*".csv", DataFrame(loss_vec_training))
         CSV.write("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/loss_vec_val_"*job*".csv", DataFrame(loss_vec_val))
@@ -451,7 +466,7 @@ println(network_info)
 include(pwd()*"/src/abc algorithms/abc_rs.jl")
 
 # load stored parameter data paris
-if Knet.gpuCount() > 0
+if run_on_lunarc #Knet.gpuCount() > 0
 
     proposalas = Matrix(CSV.read("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/abc_data_parameters.csv", allowmissing=:auto))
     datasets = Matrix(CSV.read("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/abc_data_data.csv", allowmissing=:auto))
@@ -491,7 +506,7 @@ println(size(approx_posterior_samples))
 # save approx posterior samples
 if write_to_file == 1
 
-    if Knet.gpuCount() > 0
+    if run_on_lunarc #Knet.gpuCount() > 0
 
         CSV.write("/lunarc/nobackup/users/samwiq/abc-dl/data/alpha stable/abcrs_post_"*job*".csv", DataFrame(approx_posterior_samples))
 

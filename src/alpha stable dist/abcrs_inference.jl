@@ -16,7 +16,6 @@ println(Knet.gpu())
 
 include(pwd()*"/src/alpha stable dist/set_up.jl")
 include(pwd()*"/src/abc algorithms/abc_rs.jl")
-include(pwd()*"/src/utilities/posteriorinference.jl")
 include(pwd()*"/src/generate training test data/generate_parameter_data_pairs.jl")
 
 # load stored parameter data paris

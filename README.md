@@ -1,9 +1,8 @@
 # Code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation*
 
-This repository contains all the code for the pre-print paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* by S. Wiqvist, P-A. Mattei, U. Picchini and J. Frellsen. https://arxiv.org/abs/1901.10230
+This repository contains the code for the paper *Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation* by S. Wiqvist, P-A. Mattei, U. Picchini and J. Frellsen. Link to pre-print version: https://arxiv.org/abs/1901.10230.
 
-**N.B.:** The results in the pre-print at arXiv v1 are computed using the version of the code at tag *preprint_v1*.  
-
+**N.B.:** The results in the pre-print at arXiv v2 are computed using the version of the code at tag *preprint_v2*.  
 
 ## File structure
 
@@ -25,13 +24,13 @@ This repository contains all the code for the pre-print paper *Partially Exchang
 
 /src/alpha stable
 
-* source files for the alpha-stable distribtion
+* source files for the alpha-stable distribution
 
 /src/AR2
 
 * source files for the AR2 model
 
-/src/g-and-k distribtion
+/src/g-and-k distribution
 
 * source files for the g-and-k distribution
 
@@ -56,9 +55,9 @@ This repository contains all the code for the pre-print paper *Partially Exchang
 
 The code is written in Julia 1.0.0 and the framework Knet is used to train the networks. The code can be run on both CPUs and GPUs.
 
-The networks are trained on a Nvidia K80 card by utilizing the GPU nodes at LUNARC ([http://www.lunarc.lu.se/](http://www.lunarc.lu.se/)).
+Some of the posterior inference analyses are carried out in Python 3.6.5 using the package POT: Python Optimal Transport.
 
-Packages used:
+Julia packages used:
 
 * `Knet` v1.1.0
 * `Distributions` v0.16.4
@@ -67,6 +66,11 @@ Packages used:
 * `DataFrames` v0.13.1
 * `StatsFuns` v0.7.0
 * `StatsBase` v0.25.0
+
+Python packages used:
+
+* `NumPy` v1.14.3
+* `ot` v0.5.1
 
 ## Data
 

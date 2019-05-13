@@ -45,3 +45,15 @@ function train_load_batch_to_gpu_w_dropout(model, data, optim,p)
         update!(model, grads, optim)
     end
 end
+
+
+function map_to_w_best!(w,w_best,on_gpu)
+
+    if on_gpu
+        w_temp = map(Array, w) # only use one mapping gpu -> cpu 
+        for i = 1:length(w); w_best[i][:] = w_temp[i][:]; end
+    else
+        for i = 1:length(w); w_best[i][:] = w[i][:]; end
+    end
+
+end

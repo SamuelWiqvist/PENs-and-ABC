@@ -1,0 +1,236 @@
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+50
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+0
+-1
+-1
+Loading g-and-k model
+Loading g-and-k model
+Starting: generate_parameter_data_pairs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Starting: generate_parameter_data_pairs
+Percentage done:  2.00 %
+Percentage done:  4.00 %
+Percentage done:  6.00 %
+Percentage done:  8.00 %
+Percentage done:  10.00 %
+Percentage done:  12.00 %
+Percentage done:  14.00 %
+Percentage done:  16.00 %
+Percentage done:  18.00 %
+Percentage done:  20.00 %
+Percentage done:  22.00 %
+Percentage done:  24.00 %
+Percentage done:  26.00 %
+Percentage done:  28.00 %
+Percentage done:  30.00 %
+Percentage done:  32.00 %
+Percentage done:  34.00 %
+Percentage done:  36.00 %
+Percentage done:  38.00 %
+Percentage done:  40.00 %
+Percentage done:  42.00 %
+Percentage done:  44.00 %
+Percentage done:  46.00 %
+Percentage done:  48.00 %
+Percentage done:  50.00 %
+Percentage done:  52.00 %
+Percentage done:  54.00 %
+Percentage done:  56.00 %
+Percentage done:  58.00 %
+Percentage done:  60.00 %
+Percentage done:  62.00 %
+Percentage done:  64.00 %
+Percentage done:  66.00 %
+Percentage done:  68.00 %
+Percentage done:  70.00 %
+Percentage done:  72.00 %
+Percentage done:  74.00 %
+Percentage done:  76.00 %
+Percentage done:  78.00 %
+Percentage done:  80.00 %
+Percentage done:  82.00 %
+Percentage done:  84.00 %
+Percentage done:  86.00 %
+Percentage done:  88.00 %
+Percentage done:  90.00 %
+Percentage done:  92.00 %
+Percentage done:  94.00 %
+Percentage done:  96.00 %
+Percentage done:  98.00 %
+Percentage done:  100.00 %
+Starting: generate_parameter_data_pairs
+Percentage done:  5.00 %
+Percentage done:  10.00 %
+Percentage done:  15.00 %
+Percentage done:  20.00 %
+Percentage done:  25.00 %
+Percentage done:  30.00 %
+Percentage done:  35.00 %
+Percentage done:  40.00 %
+Percentage done:  45.00 %
+Percentage done:  50.00 %
+Percentage done:  55.00 %
+Percentage done:  60.00 %
+Percentage done:  65.00 %
+Percentage done:  70.00 %
+Percentage done:  75.00 %
+Percentage done:  80.00 %
+Percentage done:  85.00 %
+Percentage done:  90.00 %
+Percentage done:  95.00 %
+Percentage done:  100.00 %
+Starting: generate_parameter_data_pairs
+139.351534 seconds (67.49 M allocations: 56.030 GiB, 2.08% gc time)
+Nbr training obs 1000, nbr parameters 115454, obs/parameters 0.01
+Starting training
+Epoch 1, current loss (training) 71.6732, current loss (val) 77.6250, best loss (val) 77.6250 
+Epoch 2, current loss (training) 35.0274, current loss (val) 42.1535, best loss (val) 42.1535 
+Epoch 3, current loss (training) 29.1503, current loss (val) 35.7771, best loss (val) 35.7771 
+Epoch 4, current loss (training) 23.0396, current loss (val) 29.8960, best loss (val) 29.8960 
+Epoch 5, current loss (training) 19.5317, current loss (val) 26.8971, best loss (val) 26.8971 
+Epoch 6, current loss (training) 17.4361, current loss (val) 24.9538, best loss (val) 24.9538 
+Epoch 7, current loss (training) 15.6387, current loss (val) 23.4367, best loss (val) 23.4367 
+Epoch 8, current loss (training) 14.0039, current loss (val) 22.6883, best loss (val) 22.6883 
+Epoch 9, current loss (training) 12.9179, current loss (val) 22.3592, best loss (val) 22.3592 
+Epoch 10, current loss (training) 11.7466, current loss (val) 22.2037, best loss (val) 22.2037 
+Epoch 11, current loss (training) 11.0562, current loss (val) 21.9449, best loss (val) 21.9449 
+Epoch 12, current loss (training) 9.9103, current loss (val) 21.8289, best loss (val) 21.8289 
+Epoch 13, current loss (training) 9.7839, current loss (val) 21.7966, best loss (val) 21.7966 
+Epoch 14, current loss (training) 8.8217, current loss (val) 21.8124, best loss (val) 21.7966 
+Epoch 15, current loss (training) 8.4814, current loss (val) 21.8072, best loss (val) 21.7966 
+Epoch 16, current loss (training) 8.0408, current loss (val) 21.8848, best loss (val) 21.7966 
+Epoch 17, current loss (training) 7.3932, current loss (val) 21.8760, best loss (val) 21.7966 
+Epoch 18, current loss (training) 7.6136, current loss (val) 21.9691, best loss (val) 21.7966 
+Epoch 19, current loss (training) 6.9361, current loss (val) 21.9833, best loss (val) 21.7966 
+Epoch 20, current loss (training) 6.6537, current loss (val) 21.9674, best loss (val) 21.7966 
+Epoch 21, current loss (training) 6.6491, current loss (val) 22.0735, best loss (val) 21.7966 
+Epoch 22, current loss (training) 6.3701, current loss (val) 22.1484, best loss (val) 21.7966 
+Epoch 23, current loss (training) 6.0254, current loss (val) 22.1325, best loss (val) 21.7966 
+Epoch 24, current loss (training) 5.9521, current loss (val) 22.3448, best loss (val) 21.7966 
+Epoch 25, current loss (training) 5.5280, current loss (val) 22.2798, best loss (val) 21.7966 
+Epoch 26, current loss (training) 5.1878, current loss (val) 22.5995, best loss (val) 21.7966 
+Epoch 27, current loss (training) 5.3796, current loss (val) 22.3284, best loss (val) 21.7966 
+Epoch 28, current loss (training) 4.8991, current loss (val) 22.6194, best loss (val) 21.7966 
+Epoch 29, current loss (training) 4.5907, current loss (val) 22.6163, best loss (val) 21.7966 
+Epoch 30, current loss (training) 4.6444, current loss (val) 22.6734, best loss (val) 21.7966 
+Epoch 31, current loss (training) 4.4649, current loss (val) 22.8033, best loss (val) 21.7966 
+Epoch 32, current loss (training) 4.3425, current loss (val) 22.7774, best loss (val) 21.7966 
+Epoch 33, current loss (training) 4.0337, current loss (val) 22.9583, best loss (val) 21.7966 
+Epoch 34, current loss (training) 3.9006, current loss (val) 22.9457, best loss (val) 21.7966 
+Epoch 35, current loss (training) 3.8203, current loss (val) 23.1066, best loss (val) 21.7966 
+Epoch 36, current loss (training) 3.7378, current loss (val) 23.1177, best loss (val) 21.7966 
+Epoch 37, current loss (training) 3.4830, current loss (val) 23.2636, best loss (val) 21.7966 
+Epoch 38, current loss (training) 3.5841, current loss (val) 23.3298, best loss (val) 21.7966 
+Epoch 39, current loss (training) 3.5921, current loss (val) 23.1845, best loss (val) 21.7966 
+Epoch 40, current loss (training) 3.0030, current loss (val) 23.6390, best loss (val) 21.7966 
+Epoch 41, current loss (training) 3.1117, current loss (val) 23.5487, best loss (val) 21.7966 
+Epoch 42, current loss (training) 2.8868, current loss (val) 23.5781, best loss (val) 21.7966 
+Epoch 43, current loss (training) 3.1783, current loss (val) 23.6957, best loss (val) 21.7966 
+Epoch 44, current loss (training) 3.0273, current loss (val) 23.8013, best loss (val) 21.7966 
+Epoch 45, current loss (training) 2.8017, current loss (val) 23.9361, best loss (val) 21.7966 
+Epoch 46, current loss (training) 2.9106, current loss (val) 23.8240, best loss (val) 21.7966 
+Epoch 47, current loss (training) 2.6733, current loss (val) 24.0456, best loss (val) 21.7966 
+Epoch 48, current loss (training) 2.6114, current loss (val) 24.1720, best loss (val) 21.7966 
+Epoch 49, current loss (training) 2.6753, current loss (val) 24.2495, best loss (val) 21.7966 
+Epoch 50, current loss (training) 2.6231, current loss (val) 24.1089, best loss (val) 21.7966 
+21.796581
+run_time_first_training_cycle:  20.93 
+
+Epochs 50, batch size, 200
+Nbr training obs 1000, nbr parameters 115454, obs/parameters 0.01
+
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+end script
+Round:1
+Round:5
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+ 28.116355 seconds (4.75 M allocations: 842.832 MiB, 0.42% gc time)
+Round:9
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+ 27.086247 seconds (2.80 M allocations: 749.209 MiB, 0.42% gc time)
+Round:13
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+ 26.961343 seconds (2.80 M allocations: 749.209 MiB, 0.21% gc time)
+Round:17
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+ 26.969850 seconds (2.80 M allocations: 749.209 MiB, 0.22% gc time)

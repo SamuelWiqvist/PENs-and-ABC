@@ -1,0 +1,1768 @@
+Failed to initialize NVML: Driver/library version mismatch
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+250
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+1
+0
+0
+Loading g-and-k model
+Loading g-and-k model
+Starting: generate_parameter_data_pairs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Starting: generate_parameter_data_pairs
+Percentage done:  2.00 %
+Percentage done:  4.00 %
+Percentage done:  6.00 %
+Percentage done:  8.00 %
+Percentage done:  10.00 %
+Percentage done:  12.00 %
+Percentage done:  14.00 %
+Percentage done:  16.00 %
+Percentage done:  18.00 %
+Percentage done:  20.00 %
+Percentage done:  22.00 %
+Percentage done:  24.00 %
+Percentage done:  26.00 %
+Percentage done:  28.00 %
+Percentage done:  30.00 %
+Percentage done:  32.00 %
+Percentage done:  34.00 %
+Percentage done:  36.00 %
+Percentage done:  38.00 %
+Percentage done:  40.00 %
+Percentage done:  42.00 %
+Percentage done:  44.00 %
+Percentage done:  46.00 %
+Percentage done:  48.00 %
+Percentage done:  50.00 %
+Percentage done:  52.00 %
+Percentage done:  54.00 %
+Percentage done:  56.00 %
+Percentage done:  58.00 %
+Percentage done:  60.00 %
+Percentage done:  62.00 %
+Percentage done:  64.00 %
+Percentage done:  66.00 %
+Percentage done:  68.00 %
+Percentage done:  70.00 %
+Percentage done:  72.00 %
+Percentage done:  74.00 %
+Percentage done:  76.00 %
+Percentage done:  78.00 %
+Percentage done:  80.00 %
+Percentage done:  82.00 %
+Percentage done:  84.00 %
+Percentage done:  86.00 %
+Percentage done:  88.00 %
+Percentage done:  90.00 %
+Percentage done:  92.00 %
+Percentage done:  94.00 %
+Percentage done:  96.00 %
+Percentage done:  98.00 %
+Percentage done:  100.00 %
+Starting: generate_parameter_data_pairs
+Percentage done:  5.00 %
+Percentage done:  10.00 %
+Percentage done:  15.00 %
+Percentage done:  20.00 %
+Percentage done:  25.00 %
+Percentage done:  30.00 %
+Percentage done:  35.00 %
+Percentage done:  40.00 %
+Percentage done:  45.00 %
+Percentage done:  50.00 %
+Percentage done:  55.00 %
+Percentage done:  60.00 %
+Percentage done:  65.00 %
+Percentage done:  70.00 %
+Percentage done:  75.00 %
+Percentage done:  80.00 %
+Percentage done:  85.00 %
+Percentage done:  90.00 %
+Percentage done:  95.00 %
+Percentage done:  100.00 %
+Starting: generate_parameter_data_pairs
+140.623189 seconds (67.28 M allocations: 56.020 GiB, 2.75% gc time)
+Nbr training obs 10000, nbr parameters 22214, obs/parameters 0.45
+0
+Starting training
+Epoch 1, current loss (training) 12.3463, current loss (val) 11.5155, best loss (val) 11.5155 
+Epoch 2, current loss (training) 11.7544, current loss (val) 11.0065, best loss (val) 11.0065 
+Epoch 3, current loss (training) 10.5688, current loss (val) 10.5285, best loss (val) 10.5285 
+Epoch 4, current loss (training) 11.3360, current loss (val) 10.7544, best loss (val) 10.5285 
+Epoch 5, current loss (training) 9.9776, current loss (val) 9.7634, best loss (val) 9.7634 
+Epoch 6, current loss (training) 10.3381, current loss (val) 9.6173, best loss (val) 9.6173 
+Epoch 7, current loss (training) 10.6091, current loss (val) 10.0902, best loss (val) 9.6173 
+Epoch 8, current loss (training) 10.0241, current loss (val) 9.5671, best loss (val) 9.5671 
+Epoch 9, current loss (training) 9.3405, current loss (val) 8.8405, best loss (val) 8.8405 
+Epoch 10, current loss (training) 9.1755, current loss (val) 8.4746, best loss (val) 8.4746 
+Epoch 11, current loss (training) 9.1406, current loss (val) 8.2854, best loss (val) 8.2854 
+Epoch 12, current loss (training) 8.3484, current loss (val) 7.9494, best loss (val) 7.9494 
+Epoch 13, current loss (training) 8.1601, current loss (val) 7.7825, best loss (val) 7.7825 
+Epoch 14, current loss (training) 7.7576, current loss (val) 7.5860, best loss (val) 7.5860 
+Epoch 15, current loss (training) 8.4137, current loss (val) 7.8355, best loss (val) 7.5860 
+Epoch 16, current loss (training) 8.0344, current loss (val) 7.5813, best loss (val) 7.5813 
+Epoch 17, current loss (training) 7.8946, current loss (val) 7.4919, best loss (val) 7.4919 
+Epoch 18, current loss (training) 8.3529, current loss (val) 7.7673, best loss (val) 7.4919 
+Epoch 19, current loss (training) 7.5844, current loss (val) 7.3413, best loss (val) 7.3413 
+Epoch 20, current loss (training) 7.3056, current loss (val) 7.1294, best loss (val) 7.1294 
+Epoch 21, current loss (training) 7.3879, current loss (val) 7.0791, best loss (val) 7.0791 
+Epoch 22, current loss (training) 9.3623, current loss (val) 8.9072, best loss (val) 7.0791 
+Epoch 23, current loss (training) 7.1933, current loss (val) 7.0427, best loss (val) 7.0427 
+Epoch 24, current loss (training) 7.4793, current loss (val) 7.0874, best loss (val) 7.0427 
+Epoch 25, current loss (training) 7.7818, current loss (val) 7.2761, best loss (val) 7.0427 
+Epoch 26, current loss (training) 7.3861, current loss (val) 6.8772, best loss (val) 6.8772 
+Epoch 27, current loss (training) 7.2180, current loss (val) 6.7269, best loss (val) 6.7269 
+Epoch 28, current loss (training) 7.0161, current loss (val) 6.9096, best loss (val) 6.7269 
+Epoch 29, current loss (training) 6.8724, current loss (val) 6.8896, best loss (val) 6.7269 
+Epoch 30, current loss (training) 7.2218, current loss (val) 6.7793, best loss (val) 6.7269 
+Epoch 31, current loss (training) 7.0683, current loss (val) 6.6481, best loss (val) 6.6481 
+Epoch 32, current loss (training) 7.0648, current loss (val) 6.7799, best loss (val) 6.6481 
+Epoch 33, current loss (training) 7.2334, current loss (val) 6.9630, best loss (val) 6.6481 
+Epoch 34, current loss (training) 6.8308, current loss (val) 6.7214, best loss (val) 6.6481 
+Epoch 35, current loss (training) 6.5254, current loss (val) 6.3915, best loss (val) 6.3915 
+Epoch 36, current loss (training) 6.3261, current loss (val) 6.3393, best loss (val) 6.3393 
+Epoch 37, current loss (training) 7.0155, current loss (val) 6.4880, best loss (val) 6.3393 
+Epoch 38, current loss (training) 6.6881, current loss (val) 6.4348, best loss (val) 6.3393 
+Epoch 39, current loss (training) 6.5905, current loss (val) 6.5301, best loss (val) 6.3393 
+Epoch 40, current loss (training) 6.4524, current loss (val) 6.4832, best loss (val) 6.3393 
+Epoch 41, current loss (training) 6.6763, current loss (val) 6.2793, best loss (val) 6.2793 
+Epoch 42, current loss (training) 7.1445, current loss (val) 6.1312, best loss (val) 6.1312 
+Epoch 43, current loss (training) 6.8629, current loss (val) 6.2996, best loss (val) 6.1312 
+Epoch 44, current loss (training) 6.8886, current loss (val) 6.7194, best loss (val) 6.1312 
+Epoch 45, current loss (training) 6.3441, current loss (val) 6.2845, best loss (val) 6.1312 
+Epoch 46, current loss (training) 6.4435, current loss (val) 6.2452, best loss (val) 6.1312 
+Epoch 47, current loss (training) 6.6180, current loss (val) 6.1909, best loss (val) 6.1312 
+Epoch 48, current loss (training) 6.8152, current loss (val) 6.4109, best loss (val) 6.1312 
+Epoch 49, current loss (training) 6.1223, current loss (val) 6.0279, best loss (val) 6.0279 
+Epoch 50, current loss (training) 7.5599, current loss (val) 7.2411, best loss (val) 6.0279 
+Epoch 51, current loss (training) 6.1685, current loss (val) 6.1193, best loss (val) 6.0279 
+Epoch 52, current loss (training) 6.2332, current loss (val) 6.2408, best loss (val) 6.0279 
+Epoch 53, current loss (training) 6.8368, current loss (val) 6.4628, best loss (val) 6.0279 
+Epoch 54, current loss (training) 6.3174, current loss (val) 6.1923, best loss (val) 6.0279 
+Epoch 55, current loss (training) 6.0682, current loss (val) 5.9403, best loss (val) 5.9403 
+Epoch 56, current loss (training) 6.5998, current loss (val) 6.1969, best loss (val) 5.9403 
+Epoch 57, current loss (training) 6.6573, current loss (val) 5.9700, best loss (val) 5.9403 
+Epoch 58, current loss (training) 6.7045, current loss (val) 6.1114, best loss (val) 5.9403 
+Epoch 59, current loss (training) 6.2745, current loss (val) 6.0244, best loss (val) 5.9403 
+Epoch 60, current loss (training) 6.0789, current loss (val) 5.9358, best loss (val) 5.9358 
+Epoch 61, current loss (training) 6.9322, current loss (val) 6.6465, best loss (val) 5.9358 
+Epoch 62, current loss (training) 6.2914, current loss (val) 6.0394, best loss (val) 5.9358 
+Epoch 63, current loss (training) 6.2433, current loss (val) 5.9093, best loss (val) 5.9093 
+Epoch 64, current loss (training) 5.8967, current loss (val) 5.8258, best loss (val) 5.8258 
+Epoch 65, current loss (training) 6.2987, current loss (val) 5.9759, best loss (val) 5.8258 
+Epoch 66, current loss (training) 6.5682, current loss (val) 6.4948, best loss (val) 5.8258 
+Epoch 67, current loss (training) 5.8866, current loss (val) 5.9726, best loss (val) 5.8258 
+Epoch 68, current loss (training) 6.3757, current loss (val) 5.9791, best loss (val) 5.8258 
+Epoch 69, current loss (training) 5.9985, current loss (val) 5.8175, best loss (val) 5.8175 
+Epoch 70, current loss (training) 6.9946, current loss (val) 6.7509, best loss (val) 5.8175 
+Epoch 71, current loss (training) 7.2271, current loss (val) 6.2104, best loss (val) 5.8175 
+Epoch 72, current loss (training) 6.3583, current loss (val) 6.4985, best loss (val) 5.8175 
+Epoch 73, current loss (training) 5.9700, current loss (val) 5.8244, best loss (val) 5.8175 
+Epoch 74, current loss (training) 5.8796, current loss (val) 5.9107, best loss (val) 5.8175 
+Epoch 75, current loss (training) 6.4969, current loss (val) 5.9742, best loss (val) 5.8175 
+Epoch 76, current loss (training) 5.7954, current loss (val) 5.7469, best loss (val) 5.7469 
+Epoch 77, current loss (training) 6.1764, current loss (val) 5.9742, best loss (val) 5.7469 
+Epoch 78, current loss (training) 5.9609, current loss (val) 6.0183, best loss (val) 5.7469 
+Epoch 79, current loss (training) 6.8397, current loss (val) 6.5717, best loss (val) 5.7469 
+Epoch 80, current loss (training) 5.8928, current loss (val) 5.7063, best loss (val) 5.7063 
+Epoch 81, current loss (training) 5.6320, current loss (val) 5.7583, best loss (val) 5.7063 
+Epoch 82, current loss (training) 5.9568, current loss (val) 5.7006, best loss (val) 5.7006 
+Epoch 83, current loss (training) 6.3497, current loss (val) 5.9189, best loss (val) 5.7006 
+Epoch 84, current loss (training) 6.3548, current loss (val) 6.8131, best loss (val) 5.7006 
+Epoch 85, current loss (training) 5.7516, current loss (val) 5.9669, best loss (val) 5.7006 
+Epoch 86, current loss (training) 6.3368, current loss (val) 5.9338, best loss (val) 5.7006 
+Epoch 87, current loss (training) 6.4783, current loss (val) 5.9744, best loss (val) 5.7006 
+Epoch 88, current loss (training) 5.5329, current loss (val) 5.6714, best loss (val) 5.6714 
+Epoch 89, current loss (training) 5.8899, current loss (val) 5.8352, best loss (val) 5.6714 
+Epoch 90, current loss (training) 5.6199, current loss (val) 5.6081, best loss (val) 5.6081 
+Epoch 91, current loss (training) 5.7155, current loss (val) 5.8877, best loss (val) 5.6081 
+Epoch 92, current loss (training) 5.6879, current loss (val) 5.8034, best loss (val) 5.6081 
+Epoch 93, current loss (training) 6.0147, current loss (val) 5.9655, best loss (val) 5.6081 
+Epoch 94, current loss (training) 6.2143, current loss (val) 5.8589, best loss (val) 5.6081 
+Epoch 95, current loss (training) 5.9443, current loss (val) 5.6598, best loss (val) 5.6081 
+Epoch 96, current loss (training) 6.0854, current loss (val) 5.8047, best loss (val) 5.6081 
+Epoch 97, current loss (training) 6.1411, current loss (val) 5.9688, best loss (val) 5.6081 
+Epoch 98, current loss (training) 6.0945, current loss (val) 5.7562, best loss (val) 5.6081 
+Epoch 99, current loss (training) 5.9402, current loss (val) 5.6958, best loss (val) 5.6081 
+Epoch 100, current loss (training) 5.6570, current loss (val) 5.8486, best loss (val) 5.6081 
+Epoch 101, current loss (training) 5.9018, current loss (val) 5.8088, best loss (val) 5.6081 
+Epoch 102, current loss (training) 7.2071, current loss (val) 6.7912, best loss (val) 5.6081 
+Epoch 103, current loss (training) 6.4927, current loss (val) 6.2640, best loss (val) 5.6081 
+Epoch 104, current loss (training) 5.9056, current loss (val) 5.8632, best loss (val) 5.6081 
+Epoch 105, current loss (training) 5.2770, current loss (val) 5.5574, best loss (val) 5.5574 
+Epoch 106, current loss (training) 5.7014, current loss (val) 5.7482, best loss (val) 5.5574 
+Epoch 107, current loss (training) 6.0307, current loss (val) 5.7953, best loss (val) 5.5574 
+Epoch 108, current loss (training) 5.5685, current loss (val) 5.5251, best loss (val) 5.5251 
+Epoch 109, current loss (training) 5.5192, current loss (val) 5.6991, best loss (val) 5.5251 
+Epoch 110, current loss (training) 6.0918, current loss (val) 5.8412, best loss (val) 5.5251 
+Epoch 111, current loss (training) 6.3311, current loss (val) 6.1176, best loss (val) 5.5251 
+Epoch 112, current loss (training) 6.5816, current loss (val) 6.2055, best loss (val) 5.5251 
+Epoch 113, current loss (training) 6.0433, current loss (val) 6.0332, best loss (val) 5.5251 
+Epoch 114, current loss (training) 5.9049, current loss (val) 5.6473, best loss (val) 5.5251 
+Epoch 115, current loss (training) 5.6177, current loss (val) 5.6138, best loss (val) 5.5251 
+Epoch 116, current loss (training) 5.4299, current loss (val) 5.5069, best loss (val) 5.5069 
+Epoch 117, current loss (training) 5.5079, current loss (val) 5.5401, best loss (val) 5.5069 
+Epoch 118, current loss (training) 5.9619, current loss (val) 5.7580, best loss (val) 5.5069 
+Epoch 119, current loss (training) 5.7021, current loss (val) 5.4739, best loss (val) 5.4739 
+Epoch 120, current loss (training) 7.2012, current loss (val) 6.7451, best loss (val) 5.4739 
+Epoch 121, current loss (training) 5.7907, current loss (val) 5.8661, best loss (val) 5.4739 
+Epoch 122, current loss (training) 5.3909, current loss (val) 5.4753, best loss (val) 5.4739 
+Epoch 123, current loss (training) 5.4871, current loss (val) 5.4585, best loss (val) 5.4585 
+Epoch 124, current loss (training) 5.8506, current loss (val) 5.8104, best loss (val) 5.4585 
+Epoch 125, current loss (training) 5.5346, current loss (val) 5.7273, best loss (val) 5.4585 
+Epoch 126, current loss (training) 6.2401, current loss (val) 6.0933, best loss (val) 5.4585 
+Epoch 127, current loss (training) 5.4414, current loss (val) 5.7465, best loss (val) 5.4585 
+Epoch 128, current loss (training) 5.4221, current loss (val) 5.4532, best loss (val) 5.4532 
+Epoch 129, current loss (training) 5.5045, current loss (val) 5.4868, best loss (val) 5.4532 
+Epoch 130, current loss (training) 5.7525, current loss (val) 5.4844, best loss (val) 5.4532 
+Epoch 131, current loss (training) 5.9276, current loss (val) 5.5603, best loss (val) 5.4532 
+Epoch 132, current loss (training) 5.5558, current loss (val) 5.4388, best loss (val) 5.4388 
+Epoch 133, current loss (training) 5.3202, current loss (val) 5.6115, best loss (val) 5.4388 
+Epoch 134, current loss (training) 6.2281, current loss (val) 6.1545, best loss (val) 5.4388 
+Epoch 135, current loss (training) 6.1392, current loss (val) 5.7462, best loss (val) 5.4388 
+Epoch 136, current loss (training) 5.4903, current loss (val) 5.7586, best loss (val) 5.4388 
+Epoch 137, current loss (training) 5.4678, current loss (val) 5.5800, best loss (val) 5.4388 
+Epoch 138, current loss (training) 5.8677, current loss (val) 5.7425, best loss (val) 5.4388 
+Epoch 139, current loss (training) 5.3030, current loss (val) 5.5508, best loss (val) 5.4388 
+Epoch 140, current loss (training) 5.3328, current loss (val) 5.4613, best loss (val) 5.4388 
+Epoch 141, current loss (training) 6.0820, current loss (val) 5.9961, best loss (val) 5.4388 
+Epoch 142, current loss (training) 4.9620, current loss (val) 5.3964, best loss (val) 5.3964 
+Epoch 143, current loss (training) 5.5736, current loss (val) 5.6706, best loss (val) 5.3964 
+Epoch 144, current loss (training) 5.8960, current loss (val) 5.6697, best loss (val) 5.3964 
+Epoch 145, current loss (training) 6.0930, current loss (val) 5.7247, best loss (val) 5.3964 
+Epoch 146, current loss (training) 6.0095, current loss (val) 6.0531, best loss (val) 5.3964 
+Epoch 147, current loss (training) 5.3093, current loss (val) 5.5090, best loss (val) 5.3964 
+Epoch 148, current loss (training) 5.5518, current loss (val) 5.4471, best loss (val) 5.3964 
+Epoch 149, current loss (training) 5.2776, current loss (val) 5.5458, best loss (val) 5.3964 
+Epoch 150, current loss (training) 5.6137, current loss (val) 5.5024, best loss (val) 5.3964 
+Epoch 151, current loss (training) 5.6894, current loss (val) 5.4292, best loss (val) 5.3964 
+Epoch 152, current loss (training) 5.5072, current loss (val) 5.5221, best loss (val) 5.3964 
+Epoch 153, current loss (training) 5.2775, current loss (val) 5.4497, best loss (val) 5.3964 
+Epoch 154, current loss (training) 5.9458, current loss (val) 5.7583, best loss (val) 5.3964 
+Epoch 155, current loss (training) 6.1551, current loss (val) 5.6592, best loss (val) 5.3964 
+Epoch 156, current loss (training) 5.5099, current loss (val) 5.3861, best loss (val) 5.3861 
+Epoch 157, current loss (training) 5.9445, current loss (val) 5.9318, best loss (val) 5.3861 
+Epoch 158, current loss (training) 5.4234, current loss (val) 5.5137, best loss (val) 5.3861 
+Epoch 159, current loss (training) 5.1313, current loss (val) 5.3380, best loss (val) 5.3380 
+Epoch 160, current loss (training) 5.5020, current loss (val) 5.5316, best loss (val) 5.3380 
+Epoch 161, current loss (training) 5.8822, current loss (val) 5.4584, best loss (val) 5.3380 
+Epoch 162, current loss (training) 5.3883, current loss (val) 5.4155, best loss (val) 5.3380 
+Epoch 163, current loss (training) 5.5294, current loss (val) 5.4631, best loss (val) 5.3380 
+Epoch 164, current loss (training) 5.4382, current loss (val) 5.2943, best loss (val) 5.2943 
+Epoch 165, current loss (training) 5.6578, current loss (val) 5.4277, best loss (val) 5.2943 
+Epoch 166, current loss (training) 5.4478, current loss (val) 5.2682, best loss (val) 5.2682 
+Epoch 167, current loss (training) 5.6619, current loss (val) 5.3096, best loss (val) 5.2682 
+Epoch 168, current loss (training) 5.5908, current loss (val) 5.5267, best loss (val) 5.2682 
+Epoch 169, current loss (training) 5.4637, current loss (val) 5.3702, best loss (val) 5.2682 
+Epoch 170, current loss (training) 5.6022, current loss (val) 5.7962, best loss (val) 5.2682 
+Epoch 171, current loss (training) 5.4058, current loss (val) 5.3239, best loss (val) 5.2682 
+Epoch 172, current loss (training) 5.3141, current loss (val) 5.6598, best loss (val) 5.2682 
+Epoch 173, current loss (training) 6.2120, current loss (val) 5.7945, best loss (val) 5.2682 
+Epoch 174, current loss (training) 6.0031, current loss (val) 5.9188, best loss (val) 5.2682 
+Epoch 175, current loss (training) 5.2795, current loss (val) 5.3472, best loss (val) 5.2682 
+Epoch 176, current loss (training) 5.2335, current loss (val) 5.3738, best loss (val) 5.2682 
+Epoch 177, current loss (training) 6.4155, current loss (val) 6.1091, best loss (val) 5.2682 
+Epoch 178, current loss (training) 5.3298, current loss (val) 5.3446, best loss (val) 5.2682 
+Epoch 179, current loss (training) 5.4560, current loss (val) 5.4253, best loss (val) 5.2682 
+Epoch 180, current loss (training) 5.1100, current loss (val) 5.3125, best loss (val) 5.2682 
+Epoch 181, current loss (training) 5.9690, current loss (val) 6.0835, best loss (val) 5.2682 
+Epoch 182, current loss (training) 5.4055, current loss (val) 5.5641, best loss (val) 5.2682 
+Epoch 183, current loss (training) 5.2987, current loss (val) 5.2452, best loss (val) 5.2452 
+Epoch 184, current loss (training) 5.6433, current loss (val) 5.3850, best loss (val) 5.2452 
+Epoch 185, current loss (training) 5.2318, current loss (val) 5.3672, best loss (val) 5.2452 
+Epoch 186, current loss (training) 6.0077, current loss (val) 5.4547, best loss (val) 5.2452 
+Epoch 187, current loss (training) 5.3185, current loss (val) 5.2561, best loss (val) 5.2452 
+Epoch 188, current loss (training) 5.4179, current loss (val) 5.3080, best loss (val) 5.2452 
+Epoch 189, current loss (training) 5.5202, current loss (val) 5.7921, best loss (val) 5.2452 
+Epoch 190, current loss (training) 5.3823, current loss (val) 5.3107, best loss (val) 5.2452 
+Epoch 191, current loss (training) 4.7871, current loss (val) 5.2231, best loss (val) 5.2231 
+Epoch 192, current loss (training) 5.1371, current loss (val) 5.1514, best loss (val) 5.1514 
+Epoch 193, current loss (training) 5.3258, current loss (val) 5.4783, best loss (val) 5.1514 
+Epoch 194, current loss (training) 5.2231, current loss (val) 5.3768, best loss (val) 5.1514 
+Epoch 195, current loss (training) 5.6566, current loss (val) 5.5012, best loss (val) 5.1514 
+Epoch 196, current loss (training) 5.3185, current loss (val) 5.1878, best loss (val) 5.1514 
+Epoch 197, current loss (training) 5.2220, current loss (val) 5.5277, best loss (val) 5.1514 
+Epoch 198, current loss (training) 5.3385, current loss (val) 5.5133, best loss (val) 5.1514 
+Epoch 199, current loss (training) 4.8939, current loss (val) 5.2363, best loss (val) 5.1514 
+Epoch 200, current loss (training) 4.9346, current loss (val) 5.2400, best loss (val) 5.1514 
+Epoch 201, current loss (training) 5.5236, current loss (val) 5.2549, best loss (val) 5.1514 
+Epoch 202, current loss (training) 5.3951, current loss (val) 5.2752, best loss (val) 5.1514 
+Epoch 203, current loss (training) 5.6390, current loss (val) 5.9153, best loss (val) 5.1514 
+Epoch 204, current loss (training) 6.2729, current loss (val) 6.0145, best loss (val) 5.1514 
+Epoch 205, current loss (training) 5.1004, current loss (val) 5.2719, best loss (val) 5.1514 
+Epoch 206, current loss (training) 5.2739, current loss (val) 5.2668, best loss (val) 5.1514 
+Epoch 207, current loss (training) 5.6086, current loss (val) 5.3932, best loss (val) 5.1514 
+Epoch 208, current loss (training) 5.2084, current loss (val) 5.2723, best loss (val) 5.1514 
+Epoch 209, current loss (training) 5.3384, current loss (val) 5.1515, best loss (val) 5.1514 
+Epoch 210, current loss (training) 5.1807, current loss (val) 5.3310, best loss (val) 5.1514 
+Epoch 211, current loss (training) 5.0566, current loss (val) 5.1765, best loss (val) 5.1514 
+Epoch 212, current loss (training) 5.6467, current loss (val) 5.5990, best loss (val) 5.1514 
+Epoch 213, current loss (training) 5.0455, current loss (val) 5.3366, best loss (val) 5.1514 
+Epoch 214, current loss (training) 5.0347, current loss (val) 5.1656, best loss (val) 5.1514 
+Epoch 215, current loss (training) 5.3803, current loss (val) 5.2463, best loss (val) 5.1514 
+Epoch 216, current loss (training) 4.9266, current loss (val) 5.1982, best loss (val) 5.1514 
+Epoch 217, current loss (training) 4.8171, current loss (val) 5.2504, best loss (val) 5.1514 
+Epoch 218, current loss (training) 5.4334, current loss (val) 5.7115, best loss (val) 5.1514 
+Epoch 219, current loss (training) 5.1716, current loss (val) 5.1560, best loss (val) 5.1514 
+Epoch 220, current loss (training) 4.8724, current loss (val) 5.1223, best loss (val) 5.1223 
+Epoch 221, current loss (training) 5.8781, current loss (val) 5.4829, best loss (val) 5.1223 
+Epoch 222, current loss (training) 5.9687, current loss (val) 5.6782, best loss (val) 5.1223 
+Epoch 223, current loss (training) 5.5910, current loss (val) 5.5658, best loss (val) 5.1223 
+Epoch 224, current loss (training) 5.0036, current loss (val) 5.2999, best loss (val) 5.1223 
+Epoch 225, current loss (training) 5.1679, current loss (val) 5.1406, best loss (val) 5.1223 
+Epoch 226, current loss (training) 5.9656, current loss (val) 6.0750, best loss (val) 5.1223 
+Epoch 227, current loss (training) 4.9989, current loss (val) 5.0427, best loss (val) 5.0427 
+Epoch 228, current loss (training) 5.0724, current loss (val) 5.0566, best loss (val) 5.0427 
+Epoch 229, current loss (training) 5.1357, current loss (val) 5.2179, best loss (val) 5.0427 
+Epoch 230, current loss (training) 5.0939, current loss (val) 5.1894, best loss (val) 5.0427 
+Epoch 231, current loss (training) 5.3443, current loss (val) 5.2957, best loss (val) 5.0427 
+Epoch 232, current loss (training) 4.5715, current loss (val) 5.0873, best loss (val) 5.0427 
+Epoch 233, current loss (training) 5.3058, current loss (val) 5.3451, best loss (val) 5.0427 
+Epoch 234, current loss (training) 4.8460, current loss (val) 5.1197, best loss (val) 5.0427 
+Epoch 235, current loss (training) 5.5956, current loss (val) 5.3618, best loss (val) 5.0427 
+Epoch 236, current loss (training) 5.4878, current loss (val) 5.3047, best loss (val) 5.0427 
+Epoch 237, current loss (training) 5.2999, current loss (val) 5.4274, best loss (val) 5.0427 
+Epoch 238, current loss (training) 4.8110, current loss (val) 5.1883, best loss (val) 5.0427 
+Epoch 239, current loss (training) 5.9039, current loss (val) 5.6607, best loss (val) 5.0427 
+Epoch 240, current loss (training) 5.1382, current loss (val) 5.6426, best loss (val) 5.0427 
+Epoch 241, current loss (training) 5.0114, current loss (val) 5.0392, best loss (val) 5.0392 
+Epoch 242, current loss (training) 5.0361, current loss (val) 5.2678, best loss (val) 5.0392 
+Epoch 243, current loss (training) 5.5464, current loss (val) 5.3421, best loss (val) 5.0392 
+Epoch 244, current loss (training) 5.3302, current loss (val) 5.4651, best loss (val) 5.0392 
+Epoch 245, current loss (training) 5.4813, current loss (val) 5.2716, best loss (val) 5.0392 
+Epoch 246, current loss (training) 4.6422, current loss (val) 5.1091, best loss (val) 5.0392 
+Epoch 247, current loss (training) 5.4697, current loss (val) 5.3003, best loss (val) 5.0392 
+Epoch 248, current loss (training) 4.6883, current loss (val) 5.0666, best loss (val) 5.0392 
+Epoch 249, current loss (training) 4.9766, current loss (val) 5.3997, best loss (val) 5.0392 
+Epoch 250, current loss (training) 5.1739, current loss (val) 5.1493, best loss (val) 5.0392 
+5.0391803
+run_time_first_training_cycle:  924.93 
+
+Epochs 250, batch size, 200
+Nbr training obs 10000, nbr parameters 22214, obs/parameters 0.45
+
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+end script
+Round:1
+Round:5
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+282.881052 seconds (7.34 M allocations: 120.561 GiB, 2.66% gc time)
+Round:9
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+282.365568 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:13
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+282.870298 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:17
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.014966 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:21
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+282.731140 seconds (4.60 M allocations: 120.434 GiB, 2.55% gc time)
+Round:25
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.777786 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:29
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+282.908504 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:33
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.802169 seconds (4.60 M allocations: 120.434 GiB, 2.63% gc time)
+Round:37
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.615311 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:41
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.533689 seconds (4.60 M allocations: 120.434 GiB, 2.66% gc time)
+Round:45
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+283.165167 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:49
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.440154 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:53
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.916073 seconds (4.60 M allocations: 120.434 GiB, 2.56% gc time)
+Round:57
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.661963 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:61
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.083727 seconds (4.60 M allocations: 120.434 GiB, 2.57% gc time)
+Round:65
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.790173 seconds (4.60 M allocations: 120.434 GiB, 2.56% gc time)
+Round:69
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.840581 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:73
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+287.372684 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:77
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.262656 seconds (4.60 M allocations: 120.434 GiB, 2.57% gc time)
+Round:81
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.910700 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:85
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.049284 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:89
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.224917 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:93
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.825839 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:97
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.489121 seconds (4.60 M allocations: 120.434 GiB, 2.65% gc time)
+Round:101
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.871501 seconds (4.60 M allocations: 120.434 GiB, 2.63% gc time)
+Round:105
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.446418 seconds (4.60 M allocations: 120.434 GiB, 2.64% gc time)
+Round:109
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.106065 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:113
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.848588 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:117
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.584516 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:121
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.623499 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:125
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.275749 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:129
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.680703 seconds (4.60 M allocations: 120.434 GiB, 2.63% gc time)
+Round:133
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.176420 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:137
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.910915 seconds (4.60 M allocations: 120.434 GiB, 2.65% gc time)
+Round:141
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.505278 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:145
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+287.179762 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:149
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.474084 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:153
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.098702 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:157
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.080170 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:161
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.797477 seconds (4.60 M allocations: 120.434 GiB, 2.61% gc time)
+Round:165
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.801958 seconds (4.60 M allocations: 120.434 GiB, 2.61% gc time)
+Round:169
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.567665 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:173
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+283.804159 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:177
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+287.141426 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:181
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.853199 seconds (4.60 M allocations: 120.434 GiB, 2.54% gc time)
+Round:185
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.467046 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:189
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.721707 seconds (4.60 M allocations: 120.434 GiB, 2.55% gc time)
+Round:193
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.399668 seconds (4.60 M allocations: 120.434 GiB, 2.55% gc time)
+Round:197
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.325963 seconds (4.60 M allocations: 120.434 GiB, 2.51% gc time)
+Round:201
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+283.218558 seconds (4.60 M allocations: 120.434 GiB, 2.70% gc time)
+Round:205
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.733108 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:209
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+283.638459 seconds (4.60 M allocations: 120.434 GiB, 2.61% gc time)
+Round:213
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+284.138325 seconds (4.60 M allocations: 120.434 GiB, 2.58% gc time)
+Round:217
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.289669 seconds (4.60 M allocations: 120.434 GiB, 2.65% gc time)
+Round:221
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+283.308234 seconds (4.60 M allocations: 120.434 GiB, 2.59% gc time)
+Round:225
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.628487 seconds (4.60 M allocations: 120.434 GiB, 2.60% gc time)
+Round:229
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+285.736095 seconds (4.60 M allocations: 120.434 GiB, 2.56% gc time)
+Round:233
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+287.257511 seconds (4.60 M allocations: 120.434 GiB, 2.61% gc time)
+Round:237
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.038082 seconds (4.60 M allocations: 120.434 GiB, 2.57% gc time)
+Round:241
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+286.360531 seconds (4.60 M allocations: 120.434 GiB, 2.62% gc time)
+Round:245
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+296.408045 seconds (4.60 M allocations: 120.434 GiB, 2.64% gc time)
+Round:249
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+312.275399 seconds (4.60 M allocations: 120.434 GiB, 2.72% gc time)
+Round:253
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+317.784030 seconds (4.60 M allocations: 120.434 GiB, 2.67% gc time)
+Round:257
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+324.532338 seconds (4.60 M allocations: 120.434 GiB, 2.72% gc time)
+Round:261
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+322.087886 seconds (4.60 M allocations: 120.434 GiB, 2.68% gc time)
+Round:265
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+321.605876 seconds (4.60 M allocations: 120.434 GiB, 2.71% gc time)
+Round:269
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+317.101526 seconds (4.60 M allocations: 120.434 GiB, 2.71% gc time)
+Round:273
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+319.145393 seconds (4.60 M allocations: 120.434 GiB, 2.70% gc time)
+Round:277
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+317.413237 seconds (4.60 M allocations: 120.434 GiB, 2.69% gc time)
+Round:281
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+318.797117 seconds (4.60 M allocations: 120.434 GiB, 2.68% gc time)
+Round:285
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+323.968843 seconds (4.60 M allocations: 120.434 GiB, 2.67% gc time)
+Round:289
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+314.223477 seconds (4.60 M allocations: 120.434 GiB, 2.65% gc time)
+Round:293
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+323.778371 seconds (4.60 M allocations: 120.434 GiB, 2.69% gc time)
+Round:297
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+318.818985 seconds (4.60 M allocations: 120.434 GiB, 2.72% gc time)
+Round:301
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+320.413421 seconds (4.60 M allocations: 120.434 GiB, 2.75% gc time)
+Round:305
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+308.808909 seconds (4.60 M allocations: 120.434 GiB, 2.65% gc time)
+Round:309
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+316.028949 seconds (4.60 M allocations: 120.434 GiB, 2.76% gc time)
+Round:313
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+316.962163 seconds (4.60 M allocations: 120.434 GiB, 2.77% gc time)
+Round:317
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+319.344888 seconds (4.60 M allocations: 120.434 GiB, 2.74% gc time)
+Round:321
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+318.016857 seconds (4.60 M allocations: 120.434 GiB, 2.70% gc time)
+Round:325
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+317.391503 seconds (4.60 M allocations: 120.434 GiB, 2.68% gc time)
+Round:329
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+312.967536 seconds (4.60 M allocations: 120.434 GiB, 2.75% gc time)
+Round:333
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+312.721210 seconds (4.60 M allocations: 120.434 GiB, 2.71% gc time)
+Round:337
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+321.069868 seconds (4.60 M allocations: 120.434 GiB, 2.75% gc time)
+Round:341
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+317.963599 seconds (4.60 M allocations: 120.434 GiB, 2.72% gc time)
+Round:345
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+322.609189 seconds (4.60 M allocations: 120.434 GiB, 2.70% gc time)
+Round:349
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+317.738814 seconds (4.60 M allocations: 120.434 GiB, 2.73% gc time)
+Round:353
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+322.826762 seconds (4.60 M allocations: 120.434 GiB, 2.70% gc time)
+Round:357
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+320.790647 seconds (4.60 M allocations: 120.434 GiB, 2.71% gc time)
+Round:361
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+320.206397 seconds (4.60 M allocations: 120.434 GiB, 2.76% gc time)
+Round:365
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+322.161062 seconds (4.60 M allocations: 120.434 GiB, 2.73% gc time)
+Round:369
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+321.844606 seconds (4.60 M allocations: 120.434 GiB, 2.77% gc time)
+Round:373
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+319.516817 seconds (4.60 M allocations: 120.434 GiB, 2.73% gc time)
+Round:377
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+319.787610 seconds (4.60 M allocations: 120.434 GiB, 2.69% gc time)
+Round:381
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+319.177697 seconds (4.60 M allocations: 120.434 GiB, 2.71% gc time)
+Round:385
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+314.451194 seconds (4.60 M allocations: 120.434 GiB, 2.77% gc time)
+Round:389
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+307.364483 seconds (4.60 M allocations: 120.434 GiB, 2.69% gc time)
+Round:393
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+322.207833 seconds (4.60 M allocations: 120.434 GiB, 2.73% gc time)
+Round:397
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+326.940596 seconds (4.60 M allocations: 120.434 GiB, 2.69% gc time)

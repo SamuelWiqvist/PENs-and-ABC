@@ -74,3 +74,10 @@ end
 # load data
 Random.seed!(1)
 y_obs = generate_data(θ_true)
+
+#=
+using PyPlot
+PyPlot.figure()
+PyPlot.plot(y_obs)
+PyPlot.xlabel("Time.")
+=#

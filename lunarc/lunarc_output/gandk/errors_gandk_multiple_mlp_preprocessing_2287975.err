@@ -1,0 +1,27 @@
+/var/spool/slurm/job2287975/slurm_script: line 37: nvidia-smi: command not found
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for AutoGrad [6710c13c-97f1-543f-91c5-74e8f7d95b35]
+│   exception = Required dependency SpecialFunctions [276daf66-3868-5448-9aa4-cd146d93841b] failed to load from a cache file.
+└ @ Base loading.jl:963
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for JLD2 [033835bb-8acc-5ee8-8aae-3f567f8a3819]
+│   exception = Required dependency CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] failed to load from a cache file.
+└ @ Base loading.jl:963
+ERROR: LoadError: LoadError: MethodError: no method matching getindex(::ErrorException, ::Int64)
+Stacktrace:
+ [1] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:615
+ [2] _require_from_serialized(::String) at ./loading.jl:678
+ [3] _require(::Base.PkgId) at ./logging.jl:317
+ [4] require(::Base.PkgId) at ./loading.jl:852
+ [5] macro expansion at ./logging.jl:311 [inlined]
+ [6] require(::Module, ::Symbol) at ./loading.jl:834
+ [7] include at ./boot.jl:317 [inlined]
+ [8] include_relative(::Module, ::String) at ./loading.jl:1038
+ [9] include(::Module, ::String) at ./sysimg.jl:29
+ [10] include(::String) at ./client.jl:388
+ [11] top-level scope at none:0
+ [12] include at ./boot.jl:317 [inlined]
+ [13] include_relative(::Module, ::String) at ./loading.jl:1038
+ [14] include(::Module, ::String) at ./sysimg.jl:29
+ [15] exec_options(::Base.JLOptions) at ./client.jl:229
+ [16] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_mlp_preprocessing.jl:44
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/multiple_ABC_runs_mlp_preprocessing.jl:3

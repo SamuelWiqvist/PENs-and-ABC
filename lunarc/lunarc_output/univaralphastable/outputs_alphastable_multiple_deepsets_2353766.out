@@ -1,0 +1,118 @@
+Failed to initialize NVML: Driver/library version mismatch
+/home/samwiq/ABC and deep learning project/abc-dl/lunarc
+/home/samwiq/ABC and deep learning project/abc-dl
+start script
+5
+check version of Knet
+    Status `~/.julia/environments/v1.0/Project.toml`
+  [336ed68f] CSV v0.3.1
+  [a93c6f00] DataFrames v0.13.1
+  [31c24e10] Distributions v0.16.4
+  [1902f260] Knet v1.1.0
+  [6f286f6a] MultivariateStats v0.6.0 #master (https://github.com/JuliaStats/MultivariateStats.jl.git)
+  [2913bbd2] StatsBase v0.25.0
+  [4c63d2b9] StatsFuns v0.7.0
+build Knet
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/KvXoO/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/wwgbh/deps/build.log`
+  Building Knet ────────────→ `~/.julia/packages/Knet/hxjeS/deps/build.log`
+test gpu
+1
+0
+0
+Loading alpha-stable model
+0
+Nbr training obs 500000, nbr parameters 23924, obs/parameters 20.90
+  1.491962 seconds (3.14 M allocations: 162.892 MiB, 3.76% gc time)
+KnetArray{Float32,2}
+  0.438758 seconds (1.06 M allocations: 55.599 MiB, 4.68% gc time)
+112.140675 seconds (8.08 M allocations: 2.193 GiB, 18.09% gc time)
+  1.638803 seconds (90.90 k allocations: 4.707 MiB, 15.52% gc time)
+1
+(1002, 500000)
+Starting training
+Epoch 1, current loss (training) 0.1923, current loss (val) 0.2164, best loss (val) 0.2164 
+Epoch 2, current loss (training) 0.3079, current loss (val) 0.2878, best loss (val) 0.2164 
+Epoch 3, current loss (training) 0.5632, current loss (val) 0.2301, best loss (val) 0.2164 
+Epoch 4, current loss (training) 0.3467, current loss (val) 0.1963, best loss (val) 0.1963 
+Epoch 5, current loss (training) 0.4069, current loss (val) 0.1873, best loss (val) 0.1873 
+0.1873365
+617.510646 seconds (14.57 M allocations: 257.587 GiB, 2.09% gc time)
+run_time_first_training_cycle:  1117.15 
+
+Epochs 5, batch size, 200
+Nbr training obs 500000, nbr parameters 23924, obs/parameters 20.90
+
+(500000, 1000)
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+759.765516 seconds (13.02 M allocations: 258.208 GiB, 3.11% gc time)
+(100, 4)
+end script
+Round:1
+Round:5
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+716.768514 seconds (9.50 M allocations: 258.043 GiB, 3.06% gc time)
+Round:9
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+741.162334 seconds (9.50 M allocations: 258.043 GiB, 2.98% gc time)
+Round:13
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+743.585152 seconds (9.50 M allocations: 258.043 GiB, 3.12% gc time)
+Round:17
+Starting abc-rs
+Percentage done:  10.00 %
+Percentage done:  20.00 %
+Percentage done:  30.00 %
+Percentage done:  40.00 %
+Percentage done:  50.00 %
+Percentage done:  60.00 %
+Percentage done:  70.00 %
+Percentage done:  80.00 %
+Percentage done:  90.00 %
+Percentage done:  100.00 %
+Ending abc-rs
+719.788972 seconds (9.50 M allocations: 258.043 GiB, 3.10% gc time)

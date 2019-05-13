@@ -1,7 +1,7 @@
 println("start script")
 
 
-network = "deepsets" # DNN_simple/fully_conncted
+network = "deepsets" # mlp/fully_conncted
 training_alg = ARGS[1] # standard/early_stopping
 epoch = parse(Int, ARGS[2])
 data_size = parse(Int, ARGS[3])
@@ -147,6 +147,20 @@ end
 network_info = @sprintf "Nbr training obs %d, nbr parameters %d, obs/parameters %.2f\n" nbr_training_obs nbr_parameters nbr_training_obs/nbr_parameters
 print(network_info)
 
+if Knet.gpuCount() > 0
+
+    # set gpu
+    Knet.gpu(0)
+    println(Knet.gpu())
+
+    # map to gpu
+    w = map(KnetArray, w)
+
+    X_val = convert(Knet.KnetArray, X_val)
+    y_val = convert(Knet.KnetArray, y_val)
+
+end
+
 ################################################################################
 # training
 ################################################################################
@@ -196,9 +210,9 @@ function training(epoch, batch_size)
         elseif loss_val < best_val_loss
             best_val_loss = loss_val
             if Knet.gpuCount() > 0
-                w_best = deepcopy(map(Array, w))
+                map_to_w_best!(w,w_best,Knet.gpuCount() > 0)
             else
-                w_best = deepcopy(w)
+                map_to_w_best!(w,w_best,Knet.gpuCount() > 0)
             end
         end
 
@@ -229,6 +243,17 @@ end
 ################################################################################
 
 w = w_best
+
+if Knet.gpuCount() > 0
+
+	w = map(Array, w)
+	println(loss(map(KnetArray, w), X_val, y_val)/size(X_val,2))
+
+else
+
+	println(loss(w, X_val, y_val)/size(X_val,2))
+
+end
 
 ################################################################################
 # calc predictions

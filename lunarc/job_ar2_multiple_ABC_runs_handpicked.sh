@@ -45,7 +45,7 @@ cd ..
 pwd
 
 # run program
-julia /home/samwiq/'ABC and deep learning project'/abc-dl/src/AR2/mutiple_ABC_runs_abcrs.jl
+julia /home/samwiq/'ABC and deep learning project'/abc-dl/src/AR2/multiple_ABC_runs_abcrs.jl
 
 
 # run using

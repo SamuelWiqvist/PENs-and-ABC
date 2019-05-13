@@ -1,0 +1,9 @@
+┌ Warning: Module CodecZlib with build ID 3158289835255140 is missing from the cache.
+│ This may mean CodecZlib [944b1d66-785c-5afd-91f1-9de20f533193] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+┌ Warning: Module DataFrames with build ID 3158302329695212 is missing from the cache.
+│ This may mean DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:941
+┌ Warning: The call to compilecache failed to create a usable precompiled cache file for Knet [1902f260-5fb4-5aff-8c31-6271790ab950]
+│   exception = Required dependency AutoGrad [6710c13c-97f1-543f-91c5-74e8f7d95b35] failed to load from a cache file.
+└ @ Base loading.jl:963

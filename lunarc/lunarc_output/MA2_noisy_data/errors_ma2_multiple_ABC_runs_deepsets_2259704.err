@@ -1,0 +1,13 @@
+ERROR: LoadError: could not open file /home/samwiq/ABC and deep learning project/abc-dl/src/MA2 noisy data/train_bp_pen.jl
+Stacktrace:
+ [1] include at ./boot.jl:317 [inlined]
+ [2] include_relative(::Module, ::String) at ./loading.jl:1038
+ [3] include(::Module, ::String) at ./sysimg.jl:29
+ [4] include(::String) at ./client.jl:388
+ [5] top-level scope at none:0
+ [6] include at ./boot.jl:317 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1038
+ [8] include(::Module, ::String) at ./sysimg.jl:29
+ [9] exec_options(::Base.JLOptions) at ./client.jl:229
+ [10] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/MA2 noisy data/multiple_ABC_runs_pen.jl:3

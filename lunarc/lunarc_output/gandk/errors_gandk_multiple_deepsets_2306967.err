@@ -1,0 +1,46 @@
+┌ Error: Error building `Knet`: 
+│ ERROR: LoadError: IOError: unlink: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:85 [inlined]
+│  [2] unlink(::String) at ./file.jl:722
+│  [3] #rm#9(::Bool, ::Bool, ::Function, ::String) at ./file.jl:253
+│  [4] #rm at ./none:0 [inlined]
+│  [5] #checkfor_mv_cp_cptree#10(::Bool, ::Function, ::String, ::String, ::String) at ./file.jl:291
+│  [6] #checkfor_mv_cp_cptree at ./none:0 [inlined]
+│  [7] #cp#12(::Bool, ::Bool, ::Function, ::String, ::String) at ./file.jl:330
+│  [8] (::getfield(Base.Filesystem, Symbol("#kw##cp")))(::NamedTuple{(:force,),Tuple{Bool}}, ::typeof(cp), ::String, ::String) at ./none:0
+│  [9] top-level scope at /home/samwiq/.julia/packages/Knet/hxjeS/deps/build.jl:49
+│  [10] include at ./boot.jl:317 [inlined]
+│  [11] include_relative(::Module, ::String) at ./loading.jl:1038
+│  [12] include(::Module, ::String) at ./sysimg.jl:29
+│  [13] include(::String) at ./client.jl:388
+│  [14] top-level scope at none:0
+│ in expression starting at /home/samwiq/.julia/packages/Knet/hxjeS/deps/build.jl:48
+└ @ Pkg.Operations /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/Pkg/src/Operations.jl:1068
+ERROR: LoadError: LoadError: MethodError: no method matching *(::Array{Float32,2}, ::KnetArray{Float32,2})
+Closest candidates are:
+  *(::Any, ::Any, !Matched::Any, !Matched::Any...) at operators.jl:502
+  *(::Union{DenseArray{T<:Union{Complex{Float32}, Complex{Float64}, Float32, Float64},2}, ReinterpretArray{T<:Union{Complex{Float32}, Complex{Float64}, Float32, Float64},2,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray}, ReshapedArray{T<:Union{Complex{Float32}, Complex{Float64}, Float32, Float64},2,A,MI} where MI<:Tuple{Vararg{SignedMultiplicativeInverse{Int64},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray}, SubArray{T<:Union{Complex{Float32}, Complex{Float64}, Float32, Float64},2,A,I,L} where L where I<:Tuple{Vararg{Union{Int64, AbstractRange{Int64}, AbstractCartesianIndex},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, ReshapedArray{T,N,A,MI} where MI<:Tuple{Vararg{SignedMultiplicativeInverse{Int64},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, DenseArray}}, !Matched::Union{DenseArray{S,1}, ReinterpretArray{S,1,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray}, ReshapedArray{S,1,A,MI} where MI<:Tuple{Vararg{SignedMultiplicativeInverse{Int64},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray}, SubArray{S,1,A,I,L} where L where I<:Tuple{Vararg{Union{Int64, AbstractRange{Int64}, AbstractCartesianIndex},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, ReshapedArray{T,N,A,MI} where MI<:Tuple{Vararg{SignedMultiplicativeInverse{Int64},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, DenseArray}}) where {T<:Union{Complex{Float32}, Complex{Float64}, Float32, Float64}, S} at /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/LinearAlgebra/src/matmul.jl:45
+  *(::Union{DenseArray{T,2}, ReinterpretArray{T,2,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray}, ReshapedArray{T,2,A,MI} where MI<:Tuple{Vararg{SignedMultiplicativeInverse{Int64},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray}, SubArray{T,2,A,I,L} where L where I<:Tuple{Vararg{Union{Int64, AbstractRange{Int64}, AbstractCartesianIndex},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, ReshapedArray{T,N,A,MI} where MI<:Tuple{Vararg{SignedMultiplicativeInverse{Int64},N} where N} where A<:Union{ReinterpretArray{T,N,S,A} where S where A<:Union{SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, SubArray{T,N,A,I,true} where I<:Tuple{AbstractUnitRange,Vararg{Any,N} where N} where A<:DenseArray where N where T, DenseArray} where N where T, DenseArray}} where T, !Matched::LinearAlgebra.AbstractQ) at /sw/src/julia/julia-1.0.0-git/julia/build_fosscuda_2018a/usr/share/julia/stdlib/v1.0/LinearAlgebra/src/qr.jl:665
+  ...
+Stacktrace:
+ [1] #differentiate#3(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Function, ::Param{Array{Any,1}}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:53
+ [2] differentiate(::Function, ::Param{Array{Any,1}}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:42
+ [3] (::getfield(AutoGrad, Symbol("##gradfun#6#7")){typeof(loss),Int64,Bool})(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::Function, ::Array{Any,1}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:124
+ [4] (::getfield(AutoGrad, Symbol("#gradfun#8")){getfield(AutoGrad, Symbol("##gradfun#6#7")){typeof(loss),Int64,Bool}})(::Array{Any,1}, ::Vararg{Any,N} where N) at /home/samwiq/.julia/packages/AutoGrad/Vt8aS/src/core.jl:120
+ [5] train_load_batch_to_gpu(::Array{Any,1}, ::Data, ::Array{Adam,1}) at /home/samwiq/ABC and deep learning project/abc-dl/src/nets/generic_loss_grad_train.jl:30
+ [6] training(::Int64, ::Int64) at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:167
+ [7] top-level scope at util.jl:213
+ [8] top-level scope at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:222
+ [9] include at ./boot.jl:317 [inlined]
+ [10] include_relative(::Module, ::String) at ./loading.jl:1038
+ [11] include(::Module, ::String) at ./sysimg.jl:29
+ [12] include(::String) at ./client.jl:388
+ [13] top-level scope at none:0
+ [14] include at ./boot.jl:317 [inlined]
+ [15] include_relative(::Module, ::String) at ./loading.jl:1038
+ [16] include(::Module, ::String) at ./sysimg.jl:29
+ [17] exec_options(::Base.JLOptions) at ./client.jl:229
+ [18] _start() at ./client.jl:421
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/train_deepsets.jl:221
+in expression starting at /home/samwiq/ABC and deep learning project/abc-dl/src/g and k dist/multiple_ABC_runs_deepsets.jl:3
